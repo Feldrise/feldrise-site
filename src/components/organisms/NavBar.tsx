@@ -5,7 +5,7 @@ import NavBarBtn from '../atoms/NavBarBtn';
 
 const NavBar = () => {
 	return (
-		<div className="px-28 py-8 flex justify-between">
+		<div className="sticky top-0 px-28 py-8 flex justify-between">
 			<Link href="/">
 				<a>
 					<Image src="/images/logo-surrounded.svg" alt="Website's logo" width={115} height={115}
