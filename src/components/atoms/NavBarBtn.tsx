@@ -8,7 +8,7 @@ interface INavBarBtnProps {
 
 const NavBarBtn = (props: INavBarBtnProps) => {
 	return (
-		<Link href={props.href} passHref={true}>
+		<Link href={props.href}>
 			<a className="px-10 py-2 bg-white rounded-full text-2xl">
 				{props.children}
 			</a>
