@@ -6,6 +6,7 @@
 
 html,
 body {
+  @apply bg-neutral;
   padding: 0;
   margin: 0;
   font-family: "JetBrains Mono", Roboto, Oxygen,
@@ -25,6 +26,7 @@ h3 {
 }
 
 a {
+  @apply hover:cursor-pointer;
   color: inherit;
   text-decoration: none;
 }
