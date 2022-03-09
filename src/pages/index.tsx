@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 			<section className="relative h-screen bg-hero">
 				<div className={cx(
 					'absolute top-1/2 left-0 -translate-y-1/2 p-12 flex flex-col gap-6',
-					'bg-white rounded-r-2xl shadow-lg shadow-black/30'
+					'bg-white rounded-r-2xl shadow-lg shadow-black/30 text-black'
 				)}>
 					<div className="relative w-full h-[75px]">
 						<Image src="/images/logo-dark.svg" layout="fill" objectFit="contain" objectPosition="left" alt="Hero's background"/>
