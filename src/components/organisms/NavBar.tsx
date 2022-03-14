@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import NavLink from '../atoms/NavBar/NavLink';
-import {MdEmail} from 'react-icons/md';
 import cx from 'classnames';
 import NavBarContext from '../../context/NavBarContext';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
 	/* Define NavBar's position based on the context.
@@ -24,8 +25,8 @@ const NavBar = () => {
 				<NavLink href="/">A propos</NavLink>
 			</div>
 			<div>
-				<NavLink href="/" className="bg-primary text-white hover:bg-primary-dark">
-					Contact <MdEmail className="text-3xl"/>
+				<NavLink href="/" className="!bg-primary text-white hover:!bg-primary-dark">
+					Contact <FontAwesomeIcon icon={faEnvelope} className="text-3xl"/>
 				</NavLink>
 			</div>
 		</div>
