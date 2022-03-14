@@ -35,6 +35,13 @@ const Home: NextPage = () => {
 					</Link>
 				</div>
 			</section>
+			<section className="container lg:px-section-lg py-8 flex items-center">
+				<p className="text-2xl leading-10">
+					L&apos;agence dispose d&apos;un pannel de connaissances étendues<br/>
+					et de <span className="relative px-4 py-2 bg-secondary">6 années d&apos;expériences</span>{' '}
+                    sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
+				</p>
+			</section>
 		</div>
 	);
 };
