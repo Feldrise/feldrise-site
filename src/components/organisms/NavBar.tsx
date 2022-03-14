@@ -16,7 +16,7 @@ const NavBar = () => {
 			'w-full top-0 py-8 flex justify-center items-center gap-20'
 		)}>
 			<div>
-				<Image src="/images/logo.svg" width={300} height={75} alt="Website's logo"/>
+				<Image src="/images/logo-white.svg" width={300} height={75} alt="Website's logo"/>
 			</div>
 			<div className="flex gap-8">
 				<NavLink href="/">Accueil</NavLink>
