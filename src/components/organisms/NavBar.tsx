@@ -15,7 +15,7 @@ const NavBar = () => {
 				<NavBarBtn href="/">A propos</NavBarBtn>
 			</div>
 			<div>
-				<NavBarBtn href="/" className="bg-primary text-white">
+				<NavBarBtn href="/" className="bg-primary text-white hover:bg-primary-dark">
 					Contact <MdEmail className="text-3xl"/>
 				</NavBarBtn>
 			</div>
