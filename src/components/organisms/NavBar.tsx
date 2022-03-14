@@ -1,30 +1,18 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Image from 'next/image';
 import NavBarBtn from '../atoms/NavBarBtn';
 import {MdEmail} from 'react-icons/md';
-import {useRouter} from 'next/router';
 import cx from 'classnames';
+import NavBarContext from '../../context/NavBarContext';
 
 const NavBar = () => {
-	const router = useRouter();
-	const [dynamicClass, setDynamicClass] = React.useState<string>('sticky');
-
-	/* Define NavBar's position based on the route.
+	/* Define NavBar's position based on the context.
 	On the landing page, for example, it had to be on top of the hero. */
-	useEffect(() => {
-		switch (router.route) {
-		case '/':
-			setDynamicClass('fixed');
-			break;
-		default:
-			setDynamicClass('sticky');
-			break;
-		}
-	}, [router.route]);
+	const [navBarClass] = React.useContext(NavBarContext);
 
 	return (
 		<div className={cx(
-			dynamicClass,
+			navBarClass,
 			'w-full top-0 py-8 flex justify-center items-center gap-20'
 		)}>
 			<div>
