@@ -14,7 +14,7 @@ const NavBar = () => {
 	return (
 		<div className={cx(
 			navBarClass,
-			'w-full top-0 py-8 flex justify-center items-center gap-20'
+			'w-full top-0 py-8 flex justify-center items-center gap-20 z-50'
 		)}>
 			<div>
 				<Image src="/images/logo-white.svg" width={300} height={75} alt="Website's logo"/>
@@ -25,7 +25,7 @@ const NavBar = () => {
 				<NavLink href="/">A propos</NavLink>
 			</div>
 			<div>
-				<NavLink href="/" className="!bg-primary text-white hover:!bg-primary-dark">
+				<NavLink href="/" className="!bg-primary !text-white hover:!bg-primary-dark">
 					Contact <FontAwesomeIcon icon={faEnvelope} className="text-3xl"/>
 				</NavLink>
 			</div>
