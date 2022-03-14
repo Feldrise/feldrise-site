@@ -2,13 +2,13 @@ import Link from 'next/link';
 import {ReactNode} from 'react';
 import cx from 'classnames';
 
-interface INavBarBtnProps {
+interface INavLinkProps {
 	href: string;
     children?: ReactNode;
 	className?: string;
 }
 
-const NavBarBtn = (props: INavBarBtnProps) => {
+const NavLink = (props: INavLinkProps) => {
 	return (
 		<Link href={props.href}>
 			<a className={cx(
@@ -22,4 +22,4 @@ const NavBarBtn = (props: INavBarBtnProps) => {
 	);
 };
 
-export default NavBarBtn;
+export default NavLink;

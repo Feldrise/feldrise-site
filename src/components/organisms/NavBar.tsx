@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import NavBarBtn from '../atoms/NavBarBtn';
+import NavLink from '../atoms/NavBar/NavLink';
 import {MdEmail} from 'react-icons/md';
 import cx from 'classnames';
 import NavBarContext from '../../context/NavBarContext';
@@ -19,14 +19,14 @@ const NavBar = () => {
 				<Image src="/images/logo.svg" width={300} height={75} alt="Website's logo"/>
 			</div>
 			<div className="flex gap-8">
-				<NavBarBtn href="/">Accueil</NavBarBtn>
-				<NavBarBtn href="/">Projets</NavBarBtn>
-				<NavBarBtn href="/">A propos</NavBarBtn>
+				<NavLink href="/">Accueil</NavLink>
+				<NavLink href="/">Projets</NavLink>
+				<NavLink href="/">A propos</NavLink>
 			</div>
 			<div>
-				<NavBarBtn href="/" className="bg-primary text-white hover:bg-primary-dark">
+				<NavLink href="/" className="bg-primary text-white hover:bg-primary-dark">
 					Contact <MdEmail className="text-3xl"/>
-				</NavBarBtn>
+				</NavLink>
 			</div>
 		</div>
 	);
