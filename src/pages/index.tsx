@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import cx from 'classnames';
 import NavBarContext from '../context/NavBarContext';
+import Section from '../components/organisms/Section';
+import ValueBanner from '../components/organisms/ValueBanner';
 
 const Home: NextPage = () => {
 	const [, setNavBarClass] = useContext(NavBarContext);
@@ -14,8 +16,8 @@ const Home: NextPage = () => {
 	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
-		<div>
-			<section className="relative h-screen bg-hero">
+		<div className="flex flex-col">
+			<div className="relative h-screen bg-hero">
 				<div className={cx(
 					'absolute top-1/2 left-0 -translate-y-1/2 p-12 flex flex-col gap-6',
 					'bg-white rounded-r-2xl shadow-lg shadow-black/30 text-black'
@@ -34,14 +36,49 @@ const Home: NextPage = () => {
 						)}>Voir les projets</a>
 					</Link>
 				</div>
-			</section>
-			<section className="container lg:px-section-lg py-8 flex items-center">
-				<p className="text-2xl leading-10">
-					L&apos;agence dispose d&apos;un pannel de connaissances étendues<br/>
-					et de <span className="relative px-4 py-2 bg-secondary">6 années d&apos;expériences</span>{' '}
-                    sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
-				</p>
-			</section>
+			</div>
+			<div className="py-8 flex flex-col gap-20">
+				<Section>
+					<p className="text-2xl leading-10">
+						L&apos;agence dispose d&apos;un pannel de connaissances étendues<br/>
+						et de <span className="relative px-4 py-2 bg-secondary whitespace-nowrap">6 années d&apos;expériences</span>{' '}
+						sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
+					</p>
+				</Section>
+				<Section className="flex flex-col items-center">
+					<span className="w-fit px-8 py-2 bg-primary rounded-lg text-2xl text-center">
+						A propos de Feldrise
+					</span>
+					<ValueBanner
+						className="py-28"
+						values={[
+							{
+								image: '/images/icons/flutter.svg',
+								text: 'Flutter & Dart',
+							},
+							{
+								image: '/images/icons/flutter.svg',
+								text: 'Flutter & Dart',
+							},
+							{
+								image: '/images/icons/flutter.svg',
+								text: 'Flutter & Dart',
+							},
+							{
+								image: '/images/icons/flutter.svg',
+								text: 'Flutter & Dart',
+							},
+							{
+								image: '/images/icons/flutter.svg',
+								text: 'Flutter & Dart',
+							},
+						]}
+					/>
+					<div>
+
+					</div>
+				</Section>
+			</div>
 		</div>
 	);
 };
