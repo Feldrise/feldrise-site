@@ -15,14 +15,6 @@ module.exports = {
 				'secondary': '#FF33DE',
 			},
 		},
-		container: {
-			padding: {
-				DEFAULT: '2rem',
-				sm: '5rem',
-				md: '10rem',
-				lg: '20rem',
-			},
-		},
 	},
 	plugins: [],
 };
