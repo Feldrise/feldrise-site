@@ -14,7 +14,8 @@ const NavBar = () => {
 	return (
 		<div className={cx(
 			navBarClass,
-			'w-full top-0 py-8 flex justify-center items-center gap-20 z-50'
+			'w-full top-0 py-8 flex justify-center items-center gap-20',
+			'bg-gradient-to-b from-black to-black/0 z-50'
 		)}>
 			<div>
 				<Image src="/images/logo-white.svg" width={300} height={75} alt="Website's logo"/>
