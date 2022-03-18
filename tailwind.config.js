@@ -14,6 +14,10 @@ module.exports = {
 				'primary-dark': '#860DDC',
 				'secondary': '#FF33DE',
 			},
+			animation: {
+				'spin-slow': 'spin 2s linear infinite',
+				'spin-slow-reverse': 'spin 2s linear infinite reverse',
+			},
 		},
 	},
 	plugins: [],

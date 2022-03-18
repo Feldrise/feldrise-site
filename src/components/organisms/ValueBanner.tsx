@@ -35,8 +35,8 @@ const ValueBanner = (props: IValueBannerProps) => {
 						index%2 === 0 && 'md:items-end'
 					)}>
 						<FCat className={cx(
-							'w-[96px] h-[96px] animate-spin',
-							index%2 === 0 ? 'fill-primary' : 'fill-secondary'
+							'w-[96px] h-[96px]',
+							index%2 === 0 ? 'fill-primary animate-spin-slow' : 'fill-secondary animate-spin-slow-reverse'
 						)}/>
 					</div>
 				</div>
