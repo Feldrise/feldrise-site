@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import type {AppProps} from 'next/app';
 import NavBar from '../components/organisms/NavBar';
 import NavBarContext from '../context/NavBarContext';
+import Footer from '../components/organisms/Footer';
 
 /**
  * The application object
@@ -15,6 +16,7 @@ const MyApp = ({Component, pageProps}: AppProps) => {
 	return <NavBarContext.Provider value={[navBarClass, setNavBarClass]}>
 		<NavBar/>
 		<Component {...pageProps} />
+		<Footer/>
 	</NavBarContext.Provider>;
 };
 
