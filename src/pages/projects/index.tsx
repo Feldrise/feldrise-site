@@ -1,8 +1,8 @@
 import type {NextPage} from 'next';
-import Section from '../components/organisms/Section';
+import Section from '../../components/organisms/Section';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Project from '../components/molecules/Project';
+import Project from '../../components/molecules/Project';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import {Autoplay, FreeMode} from 'swiper';
