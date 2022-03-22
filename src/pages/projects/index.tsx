@@ -1,4 +1,5 @@
 import type {NextPage} from 'next';
+import Link from 'next/link';
 import Section from '../../components/organisms/Section';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -30,15 +31,19 @@ const Home: NextPage = () => {
 			>
 				{[0].map((project, index) =>
 					<SwiperSlide key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-						<Project
-							name="Pluctis"
-							desc="Janvier 2021 - Mars 2021"
-						/>
-						<Project
-							name="Pluctis"
-							desc="Janvier 2021 - Mars 2021"
-							className="lg:mt-12"
-						/>
+						<Link href="/projects/[name]" as="/projects/pluctis" passHref>
+							<Project
+								name="Pluctis"
+								desc="Janvier 2021 - Mars 2021"
+							/>
+						</Link>
+						<Link href="/projects/[name]" as="/projects/pluctis" passHref>
+							<Project
+								name="Pluctis"
+								desc="Janvier 2021 - Mars 2021"
+								className="lg:mt-12"
+							/>
+						</Link>
 					</SwiperSlide>
 				)}
 			</Swiper>

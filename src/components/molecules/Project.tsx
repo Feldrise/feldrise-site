@@ -6,14 +6,18 @@ interface IProjectProps {
 	name: string;
 	desc: string;
 	className?: string;
+	href?: string;
 }
 
 const Project = (props: IProjectProps) => {
 	return (
-		<a className={cx(
-			props.className,
-			'relative h-[400px] p-8 flex flex-col justify-end'
-		)}>
+		<a
+			className={cx(
+				props.className,
+				'relative h-[400px] p-8 flex flex-col justify-end'
+			)}
+			href={props.href}
+		>
 			<div className={cx(
 				'absolute top-0 left-0 w-full h-full',
 				'after:content-[""] after:absolute after:w-full after:h-full',
