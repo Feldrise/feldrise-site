@@ -9,7 +9,6 @@ import ValueBanner from '../components/organisms/ValueBanner';
 import Button from '../components/atoms/Button';
 import Highlight from '../components/atoms/Highlight';
 import PortraitImage from '../components/atoms/PortraitImage';
-import Contact from '../components/organisms/Contact';
 import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -129,7 +128,6 @@ const Home: NextPage = () => {
 						</button>
 					</div>
 				</Section>
-				<Contact/>
 			</div>
 		</div>
 	);
