@@ -8,7 +8,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import {Autoplay, FreeMode} from 'swiper';
 
-const Home: NextPage = () => {
+const Projects: NextPage = () => {
 	return (
 		<Section className="my-20">
 			<Swiper
@@ -51,4 +51,4 @@ const Home: NextPage = () => {
 	);
 };
 
-export default Home;
+export default Projects;

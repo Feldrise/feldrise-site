@@ -11,7 +11,7 @@ import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper';
 
-const Home: NextPage = () => {
+const Project: NextPage = () => {
 	const router = useRouter();
 	const projectName = router.query.name ? router.query.name.toString() : 'N/A';
 
@@ -95,4 +95,4 @@ const Home: NextPage = () => {
 	);
 };
 
-export default Home;
+export default Project;
