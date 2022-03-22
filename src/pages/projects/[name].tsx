@@ -8,6 +8,8 @@ import {useRouter} from 'next/router';
 import Infos from '../../components/atoms/Projects/Infos';
 import Image from 'next/image';
 import React from 'react';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Pagination} from 'swiper';
 
 const Home: NextPage = () => {
 	const router = useRouter();
@@ -66,18 +68,28 @@ const Home: NextPage = () => {
 						<a className="text-3xl text-secondary hover:text-primary duration-300">Voir l&apos;app</a>
 					</div>
 				</div>
-				<div className="flex-1 flex flex-col items-center gap-4">
-					<div className="relative w-full h-[400px] rounded-xl overflow-hidden">
-						<Image src="/images/hero.png" layout="fill" alt="Image exemple phare"/>
-					</div>
-					<div className="flex justify-center gap-4">
-						{[0, 1, 2].map((value) =>
-							<a className="relative w-[125px] h-[75px] rounded-xl overflow-hidden" key={value}>
-								<Image src="/images/hero.png" layout="fill" alt="Image exemple phare"/>
-							</a>
-						)}
-					</div>
-				</div>
+				<Swiper
+					pagination={{
+						el: '.pagination',
+						clickable: true,
+						renderBullet: (index, className) => {
+							return `
+								<button class="relative w-[125px] h-[75px] rounded-xl overflow-hidden ${className}">
+									<Image src="/images/hero.png" layout="fill" alt="Image exemple phare"/>
+								</button>
+							`;
+						},
+					}}
+					modules={[Pagination]}
+					className="flex-1 flex flex-col gap-4"
+				>
+					{[0, 1, 2].map((value) =>
+						<SwiperSlide className="rounded-2xl overflow-hidden" key={value}>
+							<Image src="/images/hero.png" layout="fill" alt="Image exemple phare"/>
+						</SwiperSlide>
+					)}
+					<div className="pagination flex justify-center gap-4"/>
+				</Swiper>
 			</Section>
 		</>
 	);
