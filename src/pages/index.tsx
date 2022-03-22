@@ -45,14 +45,14 @@ const Home: NextPage = () => {
 			</div>
 			<div className="py-8 flex flex-col gap-20">
 				<Section>
-					<p className="text-2xl leading-10">
+					<p className="leading-10">
 						L&apos;agence dispose d&apos;un pannel de connaissances étendues<br/>
 						et de <Highlight>6 années d&apos;expériences</Highlight>{' '}
 						sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
 					</p>
 				</Section>
 				<Section className="flex flex-col items-center">
-					<h2 className="w-fit px-8 py-2 bg-primary rounded-lg text-2xl text-center">
+					<h2 className="w-fit px-8 py-2 bg-primary rounded-lg text-center">
 						A propos de Feldrise
 					</h2>
 					<ValueBanner
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
 					<div className="flex flex-col md:flex-row gap-8">
 						<PortraitImage className="hidden lg:block"/>
 						<div className="flex flex-col justify-center gap-4">
-							<p className="text-2xl leading-10">
+							<p className="leading-10">
 								Nos clients au coeur de nos projets. Chez Feldrise, les maîtres mots sont{' '}
 								<Highlight>bienveillance, écoute et tolérance.</Highlight>
 								<br/>Le client doit pouvoir se sentir à l’aise, compris et inclut dans le projet.
