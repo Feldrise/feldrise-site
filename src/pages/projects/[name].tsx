@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 				]}/>
 			</Section>
 			<Section className="my-12 flex flex-col md:flex-row justify-between gap-20">
-				<div className="flex flex-col justify-between">
+				<div className="flex flex-col justify-between gap-8">
 					<div>
 						<h1>{projectName}</h1>
 						<Infos
