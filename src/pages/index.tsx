@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
 	return (
 		<div className="flex flex-col">
-			<div className="relative h-screen bg-hero">
+			<div className="relative h-screen bg-hero bg-cover">
 				<div className={cx(
 					'absolute top-1/2 left-0 -translate-y-1/2 p-12 flex flex-col gap-6',
 					'bg-white rounded-r-2xl shadow-lg shadow-black/30 text-black'
