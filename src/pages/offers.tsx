@@ -63,6 +63,7 @@ const Offers: NextPage = () => {
 				<div className="flex flex-col gap-4">
 					<div className="h-[400px]">
 						<GeometricObject
+							mesh="cylinder"
 							scale={2}
 							shadowOffsetY={3}
 						/>

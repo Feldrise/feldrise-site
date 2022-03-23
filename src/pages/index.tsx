@@ -1,4 +1,4 @@
-import {useContext, useEffect} from 'react';
+import React, {useContext, useEffect} from 'react';
 import type {NextPage} from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -52,8 +52,30 @@ const Home: NextPage = () => {
 						sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
 					</p>
 					<div className="py-4 flex justify-center gap-4">
-						<Card/>
-						<Card/>
+						<Card
+							mesh="torus"
+							content={(
+								<>
+									<div>
+										<h3 className="mb-2">Activité 1</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+									<Button className="!w-full my-8 px-0" href="/offers">Voir les offres</Button>
+								</>
+							)}
+						/>
+						<Card
+							mesh="cylinder"
+							content={(
+								<>
+									<div>
+										<h3 className="mb-2">Activité 1</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+									<Button className="!w-full my-8 px-0" href="/offers">Voir les offres</Button>
+								</>
+							)}
+						/>
 					</div>
 				</Section>
 				<Section className="flex flex-col items-center">
