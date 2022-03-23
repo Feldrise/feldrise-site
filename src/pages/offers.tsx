@@ -2,6 +2,7 @@ import type {NextPage} from 'next';
 import Section from '../components/organisms/Section';
 import PortraitImage from '../components/atoms/PortraitImage';
 import Value from '../components/atoms/Offers/Value';
+import GeometricObject from '../components/atoms/Offers/GeometricObject';
 
 const Offers: NextPage = () => {
 	return (
@@ -10,7 +11,12 @@ const Offers: NextPage = () => {
 				backgroundImage: 'url("/images/cat-background.svg")',
 				backgroundSize: 'cover',
 			}}>
-				<PortraitImage className="hidden lg:block"/>
+				<div className="h-[400px]">
+					<GeometricObject
+						scale={2}
+						shadowOffsetY={3}
+					/>
+				</div>
 				<div className="flex flex-col gap-4">
 					<h2>Offre 1 : Le petit audit</h2>
 					<h3>Contenu</h3>
