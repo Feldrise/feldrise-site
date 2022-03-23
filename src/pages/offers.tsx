@@ -1,6 +1,5 @@
 import type {NextPage} from 'next';
 import Section from '../components/organisms/Section';
-import PortraitImage from '../components/atoms/PortraitImage';
 import Value from '../components/atoms/Offers/Value';
 import GeometricObject from '../components/atoms/Offers/GeometricObject';
 
@@ -62,7 +61,12 @@ const Offers: NextPage = () => {
 					/>
 				</div>
 				<div className="flex flex-col gap-4">
-					<PortraitImage className="hidden lg:block"/>
+					<div className="h-[400px]">
+						<GeometricObject
+							scale={2}
+							shadowOffsetY={3}
+						/>
+					</div>
 					<p className="text-lg">
 						La prestation coûte au total 3000€ par mois. Avec un investissement minimal vous pouvez
 						rapidement avoir les résultats.

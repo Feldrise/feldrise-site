@@ -12,7 +12,7 @@ const RotatingMesh = (props: IRotatingMeshProps) => {
 	const meshRef = React.useRef<Mesh>();
 	useFrame(() => {
 		if (meshRef.current) {
-			meshRef.current.rotateOnWorldAxis(new THREE.Vector3(0, 1, 0), (props.rotationSpeed || 0.03));
+			meshRef.current.rotateOnWorldAxis(new THREE.Vector3(0, 1, 0), (props.rotationSpeed || 0.01));
 		}
 	});
 
