@@ -15,6 +15,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import {Navigation} from 'swiper';
 import 'swiper/css/navigation';
+import Card from '../components/atoms/Offers/Card';
 
 const Home: NextPage = () => {
 	const [, setNavBarClass] = useContext(NavBarContext);
@@ -26,7 +27,7 @@ const Home: NextPage = () => {
 
 	return (
 		<div className="flex flex-col">
-			<div className="relative h-screen bg-hero">
+			<div className="relative h-screen bg-hero bg-cover">
 				<div className={cx(
 					'absolute top-1/2 left-0 -translate-y-1/2 p-12 flex flex-col gap-6',
 					'bg-white rounded-r-2xl shadow-lg shadow-black/30 text-black'
@@ -50,6 +51,10 @@ const Home: NextPage = () => {
 						et de <Highlight>6 années d&apos;expériences</Highlight>{' '}
 						sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
 					</p>
+					<div className="py-4 flex justify-center gap-4">
+						<Card/>
+						<Card/>
+					</div>
 				</Section>
 				<Section className="flex flex-col items-center">
 					<h2 className="w-fit px-8 py-2 bg-primary rounded-lg text-center">
