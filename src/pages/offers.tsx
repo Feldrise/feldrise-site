@@ -26,7 +26,9 @@ const Offers: NextPage = () => {
 			<Section className="flex flex-col gap-4">
 				<h2>Nos offres</h2>
 				<p>
-					Nous proposons des services de qualité, pour des prix abordables.
+					Feldrise vous propose deux types d&apos;offres, pour répondre à tous les besoins.
+					Que vous souhaitiez simplement découvrir nos services ou que vous aillez besoin d&apos;un plus grand accompagnement,
+					nous avons ce qu&apos;il vous faut. Bien sur, prendre contact avec nous est et sera toujours gratuit !
 				</p>
 				<div className="flex flex-col lg:flex-row items-center lg:items-start gap-4">
 					<Card
@@ -34,8 +36,11 @@ const Offers: NextPage = () => {
 						content={(
 							<>
 								<div>
-									<h3 className="mb-2">Activité 1</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<h3 className="mb-2">Petit Audit</h3>
+									<p>
+										Feldrise se propose d&apos;intervenir pendant quelques jours afin de vous aider à voir
+										plus clair dans les perspéctives d&apos;évolutions de votre projet
+									</p>
 								</div>
 								<Button className="!w-full my-4 px-0" onClick={() => scrollIntoView(offer1Ref)}>
 									Voir l&apos;offre
@@ -48,8 +53,11 @@ const Offers: NextPage = () => {
 						content={(
 							<>
 								<div>
-									<h3 className="mb-2">Activité 2</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<h3 className="mb-2">Grand Accompagnement</h3>
+									<p>
+											Parce que nous sommes convaincu de l&apos;intérêt d&apos;internaliser votre équipe,
+											nous vous accompagnons dans toutes les étapes de ce processus.
+									</p>
 								</div>
 								<Button className="!w-full my-4 px-0" onClick={() => scrollIntoView(offer2Ref)}>
 									Voir l&apos;offre
@@ -76,12 +84,17 @@ const Offers: NextPage = () => {
 				<div className="row-span-full flex flex-col gap-4">
 					<h2>Offre 1 : Le petit audit</h2>
 					<h3>Contenu</h3>
-					<p>Lors de ce petit audit qui dure entre 1 et 2 jours, nous vous proposeront 3 axes majeures</p>
+					<p>Lors de ce petit audit qui dure entre 1 et 3 jours, nous vous proposeront 3 axes majeures</p>
 					<Value
-						content="Une rencontre avec vos équipes pour identifier votre activité et quels sont les axes d'améliorations."
+						content="Une rencontre avec vous et vos équipes pour identifier votre activité et quels sont les axes d'améliorations."
 					/>
 					<Value
 						content="Une construction ensemble d'un plan d'actions pour les différents intervenants de votre entreprise."
+					/>
+					<Value
+						content="ne mise en pratique de ce que nous vous proposont, notamment la reflexion sur les bonnes pratiques
+								applicable et comment les appliquer de manière  concrête sur vos problèmes, les nouveaux outils que vous
+								pouvez utiliser et nous vous accompagerons dans la résolution d'un premier problème."
 					/>
 					<h3>Pourquoi ?</h3>
 					<h4>Des résultats</h4>
@@ -152,8 +165,8 @@ const Offers: NextPage = () => {
 						</Button>
 					</div>
 					<p className="text-lg">
-						La prestation coûte au total 3000€ par mois. Avec un investissement minimal vous pouvez
-						rapidement avoir les résultats.
+						La prestation coûte au total 3000€ par mois, ce qui veut dire qu&aposavec vec un investissement très corrrect vous pouvez
+						rapidement avoir des résultats.
 					</p>
 				</div>
 			</Section>

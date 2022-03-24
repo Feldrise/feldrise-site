@@ -43,19 +43,22 @@ const Home: NextPage = () => {
 			</div>
 			<div className="py-8 flex flex-col gap-20">
 				<Section>
-					<p className="leading-10">
-						L&apos;agence dispose d&apos;un pannel de connaissances étendues<br/>
+					<p className="leading-10 mb-8">
+						L&apos;agence dispose d&apos;un panel de connaissances étendues<br/>
 						et de <Highlight>6 années d&apos;expériences</Highlight>{' '}
 						sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
 					</p>
-					<div className="py-4 flex flex-col lg:flex-row lg:justify-center items-center lg:items-start gap-4">
+					<div className="py-4 flex flex-col lg:flex-row items-center lg:items-start gap-7">
 						<Card
 							mesh="torus"
 							content={(
 								<>
 									<div>
-										<h3 className="mb-2">Activité 1</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<h3 className="mb-2 text-center">Petit Audit</h3>
+										<p>
+											Feldrise se propose d&apos;intervenir pendant quelques jours afin de vous aider à voir
+											plus clair dans les perspéctives d&apos;évolutions de votre projet
+										</p>
 									</div>
 									<Button className="!w-full my-4 px-0" href="/offers#offer1">
 										Voir l&apos;offre
@@ -68,8 +71,11 @@ const Home: NextPage = () => {
 							content={(
 								<>
 									<div>
-										<h3 className="mb-2">Activité 2</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<h3 className="mb-2 text-center">Grand Accompagnement</h3>
+										<p>
+											Parce que nous sommes convaincu de l&apos;intérêt d&apos;internaliser votre équipe,
+											nous vous accompagnons dans toutes les étapes de ce processus.
+										</p>
 									</div>
 									<Button className="!w-full my-4 px-0" href="/offers#offer2">
 										Voir l&apos;offre
@@ -109,9 +115,9 @@ const Home: NextPage = () => {
 						<PortraitImage className="hidden lg:block"/>
 						<div className="flex flex-col justify-center gap-4">
 							<p className="leading-10">
-								Nos clients au coeur de nos projets. Chez Feldrise, les maîtres mots sont{' '}
+								Chez Feldrise, les maîtres mots sont{' '}
 								<Highlight>bienveillance, écoute et tolérance.</Highlight>
-								<br/>Le client doit pouvoir se sentir à l’aise, compris et inclut dans le projet.
+								<br/>Le client doit pouvoir se sentir à l’aise, compris et comprendre immédiament l&apos;interêt de passer par nous.
 							</p>
 							<Button>A propos de Feldrise</Button>
 						</div>
