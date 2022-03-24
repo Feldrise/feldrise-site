@@ -5,6 +5,7 @@ import cx from 'classnames';
 import NavBarContext from '../../context/NavBarContext';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import Button from '../atoms/Button';
 
 const NavBar = () => {
 	/* Define NavBar's position based on the context.
@@ -22,13 +23,19 @@ const NavBar = () => {
 			</div>
 			<div className="flex gap-8">
 				<NavLink href="/">Accueil</NavLink>
-				<NavLink href="/">Projets</NavLink>
-				<NavLink href="/">A propos</NavLink>
+				<NavLink href="/projects">Projets</NavLink>
+				<NavLink href="/offers">Offres</NavLink>
 			</div>
 			<div>
-				<NavLink href="/" className="!bg-primary !text-white hover:!bg-primary-dark">
+				<Button
+					className="!bg-primary !text-white hover:!bg-primary-dark"
+					onClick={() => document.querySelector('#contact')?.scrollIntoView({
+						behavior: 'smooth',
+						block: 'center',
+					})}
+				>
 					Contact <FontAwesomeIcon icon={faEnvelope} className="text-3xl"/>
-				</NavLink>
+				</Button>
 			</div>
 		</div>
 	);
