@@ -39,7 +39,7 @@ const GeometricObject = ({mesh = 'torus', position = new Vector3(0, 0, 0), scale
 					castShadow
 				>
 					{mesh === 'torus' && <torusBufferGeometry args={[0.8 * scale, 0.15 * scale, 24, 64]}/>}
-					{mesh === 'cylinder' && <cylinderBufferGeometry args={[0.8 * scale, 0.8 * scale, 1.5 * scale, 32]}/>}
+					{mesh === 'cylinder' && <cylinderBufferGeometry args={[0.7 * scale, 0.7 * scale, 1.3 * scale, 32]}/>}
 					<meshStandardMaterial color="#AA33FF"/>
 				</RotatingMesh>
 				<mesh
