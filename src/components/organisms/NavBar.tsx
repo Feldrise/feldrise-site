@@ -7,6 +7,7 @@ import {faEnvelope, faBars, faXmark} from '@fortawesome/free-solid-svg-icons';
 import Button from '../atoms/Button';
 import Section from '../organisms/Section';
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 
 interface IRoute {
 	name: string;
@@ -29,10 +30,15 @@ const routes: IRoute[] = [
 ];
 
 const NavBar = () => {
+	const router = useRouter();
 	/* Define NavBar's position based on the context.
 	On the landing page, for example, it had to be on top of the hero. */
-	const [navBarClass] = React.useContext(NavBarContext);
+	const [navBarClass, setNavBarClass] = React.useContext(NavBarContext);
 	const [showSlider, setShowSlider] = React.useState<boolean>(false);
+
+	React.useEffect(() => {
+		setNavBarClass('sticky');
+	}, [router.route]); // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
 		<>
