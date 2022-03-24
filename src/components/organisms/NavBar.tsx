@@ -49,12 +49,16 @@ const NavBar = () => {
 					'bg-gradient-to-b from-black to-black/0 z-40'
 				)}
 			>
-				<div className="hidden 2xl:block">
-					<Image src="/images/logo-white.svg" width={300} height={75} alt="Website's logo"/>
-				</div>
-				<div className="block 2xl:hidden">
-					<Image src="/images/logo-white-small.svg" width={75} height={75} alt="Website's logo"/>
-				</div>
+				<Link href="/">
+					<a className="hidden 2xl:block">
+						<Image src="/images/logo-white.svg" width={300} height={75} alt="Website's logo"/>
+					</a>
+				</Link>
+				<Link href="/">
+					<a className="block 2xl:hidden">
+						<Image src="/images/logo-white-small.svg" width={75} height={75} alt="Website's logo"/>
+					</a>
+				</Link>
 				<div className="hidden xl:flex gap-8">
 					{routes.map((route, index) =>
 						<Link href={route.href} key={index}>
