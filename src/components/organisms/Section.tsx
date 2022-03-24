@@ -5,13 +5,19 @@ interface ISectionProps {
 	className?: string;
 	children?: React.ReactNode;
 	style?: CSSProperties;
+	id?: string; // ID are used to scroll into view on page demand
 }
 
 const Section = React.forwardRef((props: ISectionProps, ref: ForwardedRef<HTMLElement>) => (
-	<section className={cx(
-		props.className,
-		'px-[2rem] md:px-[10rem] xl:px-[20rem]',
-	)} style={props.style} ref={ref}>
+	<section
+		className={cx(
+			props.className,
+			'px-[2rem] md:px-[10rem] xl:px-[20rem]',
+		)}
+		style={props.style}
+		ref={ref}
+		id={props.id}
+	>
 		{props.children}
 	</section>
 ));

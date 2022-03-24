@@ -63,6 +63,7 @@ const Offers: NextPage = () => {
 					backgroundSize: 'cover',
 				}}
 				ref={offer1Ref}
+				id="offer1"
 			>
 				<div className="h-[400px]">
 					<GeometricObject
@@ -96,6 +97,7 @@ const Offers: NextPage = () => {
 			<Section
 				className="my-8 py-8 grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4"
 				ref={offer2Ref}
+				id="offer2"
 			>
 				<div className="h-[400px]">
 					<GeometricObject

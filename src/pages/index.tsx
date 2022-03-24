@@ -60,7 +60,7 @@ const Home: NextPage = () => {
 										<h3 className="mb-2">Activité 1</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 									</div>
-									<Button className="!w-full my-4 px-0" href="/offers">
+									<Button className="!w-full my-4 px-0" href="/offers#offer1">
 										Voir l&apos;offre
 									</Button>
 								</>
@@ -74,7 +74,7 @@ const Home: NextPage = () => {
 										<h3 className="mb-2">Activité 2</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 									</div>
-									<Button className="!w-full my-4 px-0" href="/offers">
+									<Button className="!w-full my-4 px-0" href="/offers#offer2">
 										Voir l&apos;offre
 									</Button>
 								</>
