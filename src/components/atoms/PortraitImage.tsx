@@ -12,7 +12,7 @@ const PortraitImage = (props: IPortraitImageProps) => {
 			'relative min-w-[300px] h-[435px] rounded-3xl border-2 border-solid border-primary overflow-hidden',
 			props.className
 		)}>
-			<Image src="/images/portrait.jpeg" layout="fill" objectFit="cover" alt="Image portrait"/>
+			<Image src="/images/me.jpg" layout="fill" objectFit="cover" alt="Image portrait"/>
 		</div>
 	);
 };
