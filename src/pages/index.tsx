@@ -39,8 +39,8 @@ const Home: NextPage = () => {
 						<span className="mr-6 font-bold text-4xl">Digital Agency</span>
 						<span className="italic text-2xl">basée à Rennes</span>
 					</div>
-					<Link href="/" passHref={true}>
-						<Button className="text-white" href="/projects">Voir les projets</Button>
+					<Link href="/offers" passHref={true}>
+						<Button className="text-white">Voir les offres</Button>
 					</Link>
 				</div>
 			</div>
