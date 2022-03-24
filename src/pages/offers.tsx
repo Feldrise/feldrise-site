@@ -3,9 +3,22 @@ import Section from '../components/organisms/Section';
 import Value from '../components/atoms/Offers/Value';
 import GeometricObject from '../components/atoms/Offers/GeometricObject';
 import React from 'react';
-import Cards from '../components/molecules/Offers/Cards';
+import Card from '../components/atoms/Offers/Card';
+import Button from '../components/atoms/Button';
 
 const Offers: NextPage = () => {
+	const offer1Ref = React.useRef<HTMLElement>(null);
+	const offer2Ref = React.useRef<HTMLElement>(null);
+
+	const scrollIntoView = (ref: React.RefObject<HTMLElement>) => {
+		if (!ref.current) return;
+
+		ref.current.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+		});
+	};
+
 	return (
 		<>
 			<Section className="flex flex-col gap-4">
@@ -14,13 +27,43 @@ const Offers: NextPage = () => {
 					Nous proposons des services de qualité, pour des prix abordables.
 				</p>
 				<div className="flex gap-4">
-					<Cards/>
+					<Card
+						mesh="torus"
+						content={(
+							<>
+								<div>
+									<h3 className="mb-2">Activité 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+								<Button className="!w-full my-4 px-0" onClick={() => scrollIntoView(offer1Ref)}>
+									Voir l&apos;offre
+								</Button>
+							</>
+						)}
+					/>
+					<Card
+						mesh="cylinder"
+						content={(
+							<>
+								<div>
+									<h3 className="mb-2">Activité 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+								<Button className="!w-full my-4 px-0" onClick={() => scrollIntoView(offer2Ref)}>
+									Voir l&apos;offre
+								</Button>
+							</>
+						)}
+					/>
 				</div>
 			</Section>
-			<Section className="my-8 py-8 flex flex-col lg:flex-row gap-4" style={{
-				backgroundImage: 'url("/images/cat-background.svg")',
-				backgroundSize: 'cover',
-			}}>
+			<Section
+				className="my-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-4" style={{
+					backgroundImage: 'url("/images/cat-background.svg")',
+					backgroundSize: 'cover',
+				}}
+				ref={offer1Ref}
+			>
 				<div className="h-[400px]">
 					<GeometricObject
 						scale={2}
@@ -50,8 +93,18 @@ const Offers: NextPage = () => {
 					</p>
 				</div>
 			</Section>
-			<Section className="my-8 py-8 flex flex-col lg:flex-row gap-4">
-				<div className="flex flex-col gap-4">
+			<Section
+				className="my-8 py-8 grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4"
+				ref={offer2Ref}
+			>
+				<div className="h-[400px]">
+					<GeometricObject
+						mesh="cylinder"
+						scale={2}
+						shadowOffsetY={3}
+					/>
+				</div>
+				<div className="md:row-span-full flex flex-col gap-4">
 					<h2>Offre 2 : Le grand accompagnement</h2>
 					<p>
 						Nous vous aidons à développer votre entreprise en internalisant le développement.
@@ -71,19 +124,10 @@ const Offers: NextPage = () => {
 						 apprantis, employés...) et bien sûr, nous les formons pour qu'ils soient rapidement opérationnels et efficaces."
 					/>
 				</div>
-				<div className="flex flex-col gap-4">
-					<div className="h-[400px]">
-						<GeometricObject
-							mesh="cylinder"
-							scale={2}
-							shadowOffsetY={3}
-						/>
-					</div>
-					<p className="text-lg">
-						La prestation coûte au total 3000€ par mois. Avec un investissement minimal vous pouvez
-						rapidement avoir les résultats.
-					</p>
-				</div>
+				<p className="text-lg">
+					La prestation coûte au total 3000€ par mois. Avec un investissement minimal vous pouvez
+					rapidement avoir les résultats.
+				</p>
 			</Section>
 		</>
 	);

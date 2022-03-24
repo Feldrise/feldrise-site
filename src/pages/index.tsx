@@ -15,7 +15,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import {Navigation} from 'swiper';
 import 'swiper/css/navigation';
-import Cards from '../components/molecules/Offers/Cards';
+import Card from '../components/atoms/Offers/Card';
 
 const Home: NextPage = () => {
 	const [, setNavBarClass] = useContext(NavBarContext);
@@ -52,7 +52,34 @@ const Home: NextPage = () => {
 						sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
 					</p>
 					<div className="py-4 flex justify-center gap-4">
-						<Cards/>
+						<Card
+							mesh="torus"
+							content={(
+								<>
+									<div>
+										<h3 className="mb-2">Activité 1</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+									<Button className="!w-full my-4 px-0" href="/offers">
+										Voir l&apos;offre
+									</Button>
+								</>
+							)}
+						/>
+						<Card
+							mesh="cylinder"
+							content={(
+								<>
+									<div>
+										<h3 className="mb-2">Activité 2</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+									<Button className="!w-full my-4 px-0" href="/offers">
+										Voir l&apos;offre
+									</Button>
+								</>
+							)}
+						/>
 					</div>
 				</Section>
 				<Section className="flex flex-col items-center">

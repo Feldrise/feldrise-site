@@ -1,4 +1,4 @@
-import React, {CSSProperties} from 'react';
+import React, {CSSProperties, ForwardedRef} from 'react';
 import cx from 'classnames';
 
 interface ISectionProps {
@@ -7,15 +7,14 @@ interface ISectionProps {
 	style?: CSSProperties;
 }
 
-const Section = (props: ISectionProps) => {
-	return (
-		<section className={cx(
-			props.className,
-			'px-[2rem] md:px-[10rem] xl:px-[20rem]'
-		)} style={props.style}>
-			{props.children}
-		</section>
-	);
-};
+const Section = React.forwardRef((props: ISectionProps, ref: ForwardedRef<HTMLElement>) => (
+	<section className={cx(
+		props.className,
+		'px-[2rem] md:px-[10rem] xl:px-[20rem]',
+	)} style={props.style} ref={ref}>
+		{props.children}
+	</section>
+));
+Section.displayName = 'Section';
 
 export default Section;
