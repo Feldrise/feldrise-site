@@ -2,10 +2,21 @@ import type {NextPage} from 'next';
 import Section from '../components/organisms/Section';
 import Value from '../components/atoms/Offers/Value';
 import GeometricObject from '../components/atoms/Offers/GeometricObject';
+import React from 'react';
+import Cards from '../components/molecules/Offers/Cards';
 
 const Offers: NextPage = () => {
 	return (
 		<>
+			<Section className="flex flex-col gap-4">
+				<h2>Nos offres</h2>
+				<p>
+					Nous proposons des services de qualité, pour des prix abordables.
+				</p>
+				<div className="flex gap-4">
+					<Cards/>
+				</div>
+			</Section>
 			<Section className="my-8 py-8 flex flex-col lg:flex-row gap-4" style={{
 				backgroundImage: 'url("/images/cat-background.svg")',
 				backgroundSize: 'cover',
