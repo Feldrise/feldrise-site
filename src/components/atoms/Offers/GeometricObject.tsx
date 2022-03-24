@@ -4,15 +4,18 @@ import {PerspectiveCamera, softShadows} from '@react-three/drei';
 import {MathUtils, Vector3} from 'three';
 import RotatingMesh from '../RotatingMesh';
 
+export type GeometricMeshes = 'torus' | 'cylinder';
+
 interface IGeometricObjectProps {
 	position?: Vector3;
 	scale?: number;
 	shadowOffsetY?: number;
+	mesh?: GeometricMeshes;
 }
 
 softShadows();
 
-const GeometricObject = ({position = new Vector3(0, 0, 0), scale = 1, shadowOffsetY = 1.5}: IGeometricObjectProps) => {
+const GeometricObject = ({mesh = 'torus', position = new Vector3(0, 0, 0), scale = 1, shadowOffsetY = 1.5}: IGeometricObjectProps) => {
 	return (
 		<Canvas shadows>
 			<PerspectiveCamera
@@ -35,7 +38,8 @@ const GeometricObject = ({position = new Vector3(0, 0, 0), scale = 1, shadowOffs
 					position={position}
 					castShadow
 				>
-					<torusBufferGeometry args={[0.8 * scale, 0.15 * scale, 24, 64]}/>
+					{mesh === 'torus' && <torusBufferGeometry args={[0.8 * scale, 0.15 * scale, 24, 64]}/>}
+					{mesh === 'cylinder' && <cylinderBufferGeometry args={[0.7 * scale, 0.7 * scale, 1.3 * scale, 32]}/>}
 					<meshStandardMaterial color="#AA33FF"/>
 				</RotatingMesh>
 				<mesh
