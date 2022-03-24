@@ -13,7 +13,7 @@ import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
-import {Navigation} from 'swiper';
+import {Autoplay, Navigation} from 'swiper';
 import 'swiper/css/navigation';
 import Card from '../components/atoms/Offers/Card';
 
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
 	return (
 		<div className="flex flex-col">
-			<div className="relative h-screen bg-hero bg-cover">
+			<div className="relative h-screen bg-hero bg-right lg:bg-cover">
 				<div className={cx(
 					'absolute top-1/2 left-0 -translate-y-1/2 p-12 flex flex-col gap-6',
 					'bg-white rounded-r-2xl shadow-lg shadow-black/30 text-black'
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
 						<span className="italic text-2xl">basée à Rennes</span>
 					</div>
 					<Link href="/" passHref={true}>
-						<Button className="text-white">Voir les projets</Button>
+						<Button className="text-white" href="/projects">Voir les projets</Button>
 					</Link>
 				</div>
 			</div>
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
 						et de <Highlight>6 années d&apos;expériences</Highlight>{' '}
 						sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
 					</p>
-					<div className="py-4 flex justify-center gap-4">
+					<div className="py-4 flex flex-col lg:flex-row lg:justify-center items-center lg:items-start gap-4">
 						<Card
 							mesh="torus"
 							content={(
@@ -83,9 +83,6 @@ const Home: NextPage = () => {
 					</div>
 				</Section>
 				<Section className="flex flex-col items-center">
-					<h2 className="w-fit px-8 py-2 bg-primary rounded-lg text-center">
-						A propos de Feldrise
-					</h2>
 					<ValueBanner
 						className="py-28"
 						values={[
@@ -126,11 +123,16 @@ const Home: NextPage = () => {
 				<Section>
 					<div className="relative">
 						<Swiper
-							modules={[Navigation]}
+							modules={[Navigation, Autoplay]}
 							spaceBetween={50}
 							navigation={{
 								nextEl: '.nextSwipe',
 								prevEl: '.prevSwipe',
+							}}
+							autoplay={{
+								delay: 3000,
+								disableOnInteraction: false,
+								pauseOnMouseEnter: true,
 							}}
 							loop={true}
 						>
