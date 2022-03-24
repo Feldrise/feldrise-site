@@ -5,6 +5,8 @@ import GeometricObject from '../components/atoms/Offers/GeometricObject';
 import React from 'react';
 import Card from '../components/atoms/Offers/Card';
 import Button from '../components/atoms/Button';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 const Offers: NextPage = () => {
 	const offer1Ref = React.useRef<HTMLElement>(null);
@@ -26,7 +28,7 @@ const Offers: NextPage = () => {
 				<p>
 					Nous proposons des services de qualité, pour des prix abordables.
 				</p>
-				<div className="flex gap-4">
+				<div className="flex flex-col lg:flex-row items-center lg:items-start gap-4">
 					<Card
 						mesh="torus"
 						content={(
@@ -58,7 +60,7 @@ const Offers: NextPage = () => {
 				</div>
 			</Section>
 			<Section
-				className="my-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-4" style={{
+				className="my-8 py-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-4" style={{
 					backgroundImage: 'url("/images/cat-background.svg")',
 					backgroundSize: 'cover',
 				}}
@@ -71,7 +73,7 @@ const Offers: NextPage = () => {
 						shadowOffsetY={3}
 					/>
 				</div>
-				<div className="flex flex-col gap-4">
+				<div className="row-span-full flex flex-col gap-4">
 					<h2>Offre 1 : Le petit audit</h2>
 					<h3>Contenu</h3>
 					<p>Lors de ce petit audit qui dure entre 1 et 2 jours, nous vous proposeront 3 axes majeures</p>
@@ -93,9 +95,20 @@ const Offers: NextPage = () => {
 						Vous pouvez ainsi vous lancer dans la suite en sachant parfaitement à quoi vous attendre.
 					</p>
 				</div>
+				<div className="flex justify-center">
+					<Button
+						className="h-fit !bg-primary !text-white hover:!bg-primary-dark"
+						onClick={() => document.querySelector('#contact')?.scrollIntoView({
+							behavior: 'smooth',
+							block: 'center',
+						})}
+					>
+						Contact <FontAwesomeIcon icon={faEnvelope} className="text-3xl"/>
+					</Button>
+				</div>
 			</Section>
 			<Section
-				className="my-8 py-8 grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4"
+				className="my-8 py-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-4"
 				ref={offer2Ref}
 				id="offer2"
 			>
@@ -126,10 +139,23 @@ const Offers: NextPage = () => {
 						 apprantis, employés...) et bien sûr, nous les formons pour qu'ils soient rapidement opérationnels et efficaces."
 					/>
 				</div>
-				<p className="text-lg">
-					La prestation coûte au total 3000€ par mois. Avec un investissement minimal vous pouvez
-					rapidement avoir les résultats.
-				</p>
+				<div className="flex flex-col gap-8">
+					<div className="flex justify-center">
+						<Button
+							className="h-fit !bg-primary !text-white hover:!bg-primary-dark"
+							onClick={() => document.querySelector('#contact')?.scrollIntoView({
+								behavior: 'smooth',
+								block: 'center',
+							})}
+						>
+							Contact <FontAwesomeIcon icon={faEnvelope} className="text-3xl"/>
+						</Button>
+					</div>
+					<p className="text-lg">
+						La prestation coûte au total 3000€ par mois. Avec un investissement minimal vous pouvez
+						rapidement avoir les résultats.
+					</p>
+				</div>
 			</Section>
 		</>
 	);

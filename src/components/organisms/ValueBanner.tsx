@@ -16,11 +16,11 @@ interface IValueBannerProps {
 const ValueBanner = (props: IValueBannerProps) => {
 	return (
 		<div className={cx(
-			'w-full p-4 flex flex-col md:flex-row justify-center items-center gap-8',
+			'w-full p-4 flex flex-col lg:flex-row justify-center items-center gap-8',
 			props.className
 		)}>
 			{props.values.map((value, index) => (
-				<div className="grid grid-cols-[175px_175px] grid-rows-[175px] md:grid-cols-[175px] md:grid-rows-[175px_175px]" key={index}>
+				<div className="grid grid-cols-[175px_175px] grid-rows-[175px] lg:grid-cols-[175px] lg:grid-rows-[175px_175px]" key={index}>
 					<div className={cx(
 						'p-4 flex flex-col justify-between bg-white rounded-2xl text-black text-center',
 						index%2 !== 0 && 'order-last'
@@ -31,8 +31,8 @@ const ValueBanner = (props: IValueBannerProps) => {
 						<span>{value.text}</span>
 					</div>
 					<div className={cx(
-						'flex justify-center items-center md:items-start',
-						index%2 === 0 && 'md:items-end'
+						'flex justify-center items-center lg:items-start',
+						index%2 === 0 && 'lg:items-end'
 					)}>
 						<FCat className={cx(
 							'w-[96px] h-[96px]',

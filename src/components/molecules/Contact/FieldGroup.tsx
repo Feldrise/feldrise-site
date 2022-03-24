@@ -6,7 +6,7 @@ interface IFieldGroupProps {
 
 const FieldGroup = (props: IFieldGroupProps) => {
 	return (
-		<div className="w-full flex flex-col sm:flex-row gap-4">
+		<div className="w-full flex flex-col lg:flex-row gap-4">
 			{props.children}
 		</div>
 	);
