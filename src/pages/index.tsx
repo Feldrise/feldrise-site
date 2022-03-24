@@ -119,7 +119,7 @@ const Home: NextPage = () => {
 								<Highlight>bienveillance, écoute et tolérance.</Highlight>
 								<br/>Le client doit pouvoir se sentir à l’aise, compris et comprendre immédiament l&apos;interêt de passer par nous.
 							</p>
-							<Button>A propos de Feldrise</Button>
+							<Button href="/offers">Voir les offres</Button>
 						</div>
 					</div>
 				</Section>
