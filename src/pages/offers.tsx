@@ -26,7 +26,7 @@ const Offers: NextPage = () => {
 				<p>
 					Nous proposons des services de qualité, pour des prix abordables.
 				</p>
-				<div className="flex gap-4">
+				<div className="flex flex-col lg:flex-row items-center lg:items-start gap-4">
 					<Card
 						mesh="torus"
 						content={(
@@ -58,7 +58,7 @@ const Offers: NextPage = () => {
 				</div>
 			</Section>
 			<Section
-				className="my-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-4" style={{
+				className="my-8 py-8 grid grid-cols-1 lg:grid-cols-2 gap-4" style={{
 					backgroundImage: 'url("/images/cat-background.svg")',
 					backgroundSize: 'cover',
 				}}
@@ -95,7 +95,7 @@ const Offers: NextPage = () => {
 				</div>
 			</Section>
 			<Section
-				className="my-8 py-8 grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4"
+				className="my-8 py-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-4"
 				ref={offer2Ref}
 				id="offer2"
 			>
