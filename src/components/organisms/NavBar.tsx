@@ -61,9 +61,9 @@ const NavBar = () => {
 						</Link>
 					)}
 				</div>
-				<div>
+				<div className="flex gap-8">
 					<Button
-						className="hidden xl:block !bg-primary !text-white hover:!bg-primary-dark"
+						className="!bg-primary !text-white hover:!bg-primary-dark"
 						onClick={() => document.querySelector('#contact')?.scrollIntoView({
 							behavior: 'smooth',
 							block: 'center',
