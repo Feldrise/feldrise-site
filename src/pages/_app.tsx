@@ -12,7 +12,7 @@ import Contact from '../components/organisms/Contact';
  * @return {AppProps} the actual HTML app
  */
 const MyApp = ({Component, pageProps}: AppProps) => {
-	const [navBarClass, setNavBarClass] = React.useState<string>('sticky');
+	const [navBarClass, setNavBarClass] = React.useState<string>('');
 
 	return <NavBarContext.Provider value={[navBarClass, setNavBarClass]}>
 		<NavBar/>
