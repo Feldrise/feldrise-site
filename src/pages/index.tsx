@@ -1,6 +1,5 @@
 import React, {useContext, useEffect} from 'react';
 import type {NextPage} from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
 import cx from 'classnames';
 import NavBarContext from '../context/NavBarContext';
@@ -39,9 +38,7 @@ const Home: NextPage = () => {
 						<span className="mr-6 font-bold text-4xl">Digital Agency</span>
 						<span className="italic text-2xl">basée à Rennes</span>
 					</div>
-					<Link href="/offers" passHref={true}>
-						<Button className="text-white">Voir les offres</Button>
-					</Link>
+					<Button className="text-white" href="/offers">Voir les offres</Button>
 				</div>
 			</div>
 			<div className="py-8 flex flex-col gap-20">
