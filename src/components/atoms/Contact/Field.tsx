@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {HTMLInputTypeAttribute} from 'react';
 import cx from 'classnames';
+import {UseFormRegister} from 'react-hook-form';
+import {IContactFormData} from '../../molecules/Contact/Form';
 
 interface IFieldProps {
-	name: string;
+	label?: string;
 	className?: string;
 	inputClassName?: string;
-	type?: 'rich' | string;
+	type?: 'rich' | HTMLInputTypeAttribute;
 	placeholder?: string;
 	value?: string | number;
+	name: string;
+	register: UseFormRegister<IContactFormData>;
 	required?: boolean;
 }
 
@@ -17,9 +21,11 @@ const Field = (props: IFieldProps) => {
 			props.className,
 			'w-full flex flex-col gap-4'
 		)}>
-			<span className="text-xl">
-				{props.name} {props.required && <span className="text-sm text-red-500">*</span>}
-			</span>
+			{props.label &&
+				<span className="text-xl">
+					{props.label} {props.required && <span className="text-sm text-red-500">*</span>}
+				</span>
+			}
 			{props.type == 'rich' ? (
 				<textarea
 					className={cx(
@@ -28,6 +34,7 @@ const Field = (props: IFieldProps) => {
 					)}
 					placeholder={props.placeholder}
 					value={props.value}
+					{...props.register(props.name, {required: props.required})}
 				/>
 			) : (
 				<input
@@ -38,6 +45,7 @@ const Field = (props: IFieldProps) => {
 					type={props.type || 'text'}
 					placeholder={props.placeholder}
 					value={props.value}
+					{...props.register(props.name, {required: props.required})}
 				/>
 			)}
 		</div>
