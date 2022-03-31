@@ -162,7 +162,7 @@ const Home: NextPage = () => {
 						>
 							{reviews.map((review, index) => (
 								<SwiperSlide key={index} className="m-auto">
-									<div className="h-full flex justify-center items-center gap-4">
+									<div className="h-full px-8 md:px-0 flex justify-center items-center gap-4">
 										<div className="p-12 col-span-2 rounded-2xl bg-white text-black">
 											<Image src={review.icon} width={180} height={40} alt={`Logo avis de ${review.author}`}/>
 											<p className="my-8">
@@ -177,10 +177,10 @@ const Home: NextPage = () => {
 								</SwiperSlide>
 							))}
 						</Swiper>
-						<button className="prevSwipe absolute top-1/2 -translate-y-1/2 -translate-x-20">
+						<button className="prevSwipe absolute top-1/2 -translate-y-1/2 md:-translate-x-20 z-20">
 							<FontAwesomeIcon icon={faChevronLeft} className="text-3xl text-secondary"/>
 						</button>
-						<button className="nextSwipe absolute top-1/2 right-0 -translate-y-1/2 translate-x-20">
+						<button className="nextSwipe absolute top-1/2 right-0 -translate-y-1/2 md:translate-x-20 z-20">
 							<FontAwesomeIcon icon={faChevronRight} className="text-3xl text-secondary"/>
 						</button>
 					</div>
