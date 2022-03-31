@@ -16,6 +16,27 @@ import {Autoplay, Navigation} from 'swiper';
 import 'swiper/css/navigation';
 import Card from '../components/atoms/Offers/Card';
 
+interface IReview {
+	author: string;
+	content: string;
+	icon: string;
+	profilePicture?: string;
+}
+
+const reviews: IReview[] = [
+	{
+		author: 'Microsoft, Inc.',
+		content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
+		icon: '/images/icons/microsoft.png',
+	},
+	{
+		author: 'Microsoft, Inc.',
+		content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
+		icon: '/images/icons/microsoft.png',
+		profilePicture: '/images/me.jpg',
+	},
+];
+
 const Home: NextPage = () => {
 	const [, setNavBarClass] = useContext(NavBarContext);
 
@@ -139,19 +160,19 @@ const Home: NextPage = () => {
 							}}
 							loop={true}
 						>
-							{[0, 1].map((review, index) => (
-								<SwiperSlide key={index}>
+							{reviews.map((review, index) => (
+								<SwiperSlide key={index} className="m-auto">
 									<div className="h-full flex justify-center items-center gap-4">
 										<div className="p-12 col-span-2 rounded-2xl bg-white text-black">
-											<Image src="/images/icons/microsoft.png" width={180} height={40} alt="Logo de microsoft"/>
+											<Image src={review.icon} width={180} height={40} alt={`Logo avis de ${review.author}`}/>
 											<p className="my-8">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Dictum pretium morbi varius nisi aliquet amet lorem. Arcu,
-												pellentesque ullamcorper interdum aliquet leo viverra.
+												{review.content}
 											</p>
-											<p>Martin Matin, CEO de Microsoft</p>
+											<p>{review.author}</p>
 										</div>
-										<PortraitImage className="hidden lg:block"/>
+										{review.profilePicture &&
+											<PortraitImage image={review.profilePicture} className="hidden lg:block"/>
+										}
 									</div>
 								</SwiperSlide>
 							))}
