@@ -5,6 +5,18 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			keyframes: {
+				slideIn: {
+					'0%': {
+						opacity: 0,
+						transform: 'translateX(-50%)',
+					},
+					'100%': {
+						opacity: 1,
+						transform: 'translateX(0)',
+					},
+				},
+			},
 			backgroundImage: {
 				'hero': 'url("/images/hero.png")',
 			},
@@ -17,6 +29,7 @@ module.exports = {
 			animation: {
 				'spin-slow': 'spin 2s linear infinite',
 				'spin-slow-reverse': 'spin 2s linear infinite reverse',
+				'slide-in': 'slideIn 0.2s linear forwards',
 			},
 		},
 	},
