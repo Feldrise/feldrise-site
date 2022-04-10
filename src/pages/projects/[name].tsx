@@ -3,7 +3,7 @@ import Section from '../../components/organisms/Section';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css';
-import NavIndicator from '../../components/NavIndicator';
+import NavIndicator from '../../components/atoms/NavIndicator';
 import {useRouter} from 'next/router';
 import Infos from '../../components/atoms/Projects/Infos';
 import Image from 'next/image';
