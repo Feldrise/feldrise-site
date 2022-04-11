@@ -42,3 +42,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@keyframes progressDown {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}

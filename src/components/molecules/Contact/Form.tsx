@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import Field from '../../atoms/Contact/Field';
 import Button from '../../atoms/Button';
 import FieldGroup from './FieldGroup';
 import axios from 'axios';
 import {FieldValues, useForm} from 'react-hook-form';
 import {GoogleReCaptchaProvider, GoogleReCaptcha} from 'react-google-recaptcha-v3';
+import NotificationContext from '../../../context/NotificationContext';
 
 export interface IContactFormData extends FieldValues {
 	fullName: string;
@@ -15,8 +16,10 @@ export interface IContactFormData extends FieldValues {
 }
 
 const Form = () => {
-	const {register, handleSubmit} = useForm<IContactFormData>();
+	const {register, handleSubmit, reset} = useForm<IContactFormData>();
 	const [captchaToken, setCaptchaToken] = useState<string>();
+
+	const [, addNotification] = useContext(NotificationContext);
 
 	// eslint-disable-next-line @typescript-eslint/ban-types
 	const onSubmit = async (data: IContactFormData) => {
@@ -27,6 +30,11 @@ const Form = () => {
 			phone: data.phone,
 			society: data.society,
 			message: data.message,
+		}).then(() => {
+			addNotification('Le message a bien été envoyé.', 'success', 5000);
+			reset();
+		}).catch(() => {
+			addNotification('Une erreur est survenue, veuillez réessayer.', 'error', 5000);
 		});
 	};
 
