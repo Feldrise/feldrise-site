@@ -33,8 +33,8 @@ const Highlight = (props: IHighlightProps) => {
 	return (
 		<span
 			className={cx(
-				'relative px-4 py-2 whitespace-nowrap z-0',
-				'before:content-[""] before:absolute before:h-full before:top-0 before:left-0',
+				'relative px-4 py-2 bg-secondary lg:bg-none lg:whitespace-nowrap z-0',
+				'lg:before:content-[""] before:absolute before:h-full before:top-0 before:left-0',
 				visible ? 'before:w-full' : 'before:w-0',
 				'before:bg-secondary before:-z-10 before:transition-all before:duration-1000'
 			)}
