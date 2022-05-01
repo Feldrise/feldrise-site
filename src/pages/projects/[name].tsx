@@ -48,7 +48,9 @@ const Project: NextPage = () => {
 									</div>
 								)}
 							</div>
-							<a className="text-3xl text-secondary hover:text-primary duration-300">Voir l&apos;app</a>
+							<a className="text-3xl text-secondary hover:text-primary duration-300" href={project.url} target="_blank" rel="noreferrer">
+								Site du projet
+							</a>
 						</div>
 					}
 				</div>
