@@ -22,8 +22,8 @@ const Form = () => {
 	const [, addNotification] = useContext(NotificationContext);
 
 	// eslint-disable-next-line @typescript-eslint/ban-types
-	const onSubmit = async (data: IContactFormData) => {
-		await axios.post('/api/mail', {
+	const onSubmit = (data: IContactFormData) => {
+		axios.post('/api/mail', {
 			captchaToken,
 			email: data.email,
 			fullName: data.fullName,

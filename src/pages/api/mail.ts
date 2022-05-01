@@ -75,7 +75,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 			console.log(nodemailer.getTestMessageUrl(sentMail));
 		}*/
 
-		res.status(200);
+		res.status(200).send('ok');
 	} catch (e) {
 		console.log(e);
 		res.status(500).send(e);
