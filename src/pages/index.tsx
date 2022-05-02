@@ -24,16 +24,20 @@ interface IReview {
 }
 
 const reviews: IReview[] = [
+	// {
+	// 	author: 'Capago (Galien)',
+	// 	content: `Nous avons travaillé avec Victor pour le développement de notre application.
+	// 			  Il a su répondre parfaitement à nos demandes ainsi qu\'être une véritable force
+	// 			  de proposition tout au long du projet. Sérieux et compétent, je recommande
+	// 			  fortement Victor.`,
+	// 	icon: '/images/icons/microsoft.png',
+	// },
 	{
-		author: 'Microsoft, Inc.',
-		content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
-		icon: '/images/icons/microsoft.png',
-	},
-	{
-		author: 'Microsoft, Inc.',
-		content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
-		icon: '/images/icons/microsoft.png',
-		profilePicture: '/images/me.jpg',
+		author: 'Vet-Design (Yohann HUCHET)',
+		content: `Feldrise est très compétent, à l'écoute et de bons conseils. Passionné ils aiment être challengé pour aboutir au résultat demandé.
+				  N'hesitez pas à travailler avec eux.`,
+		icon: '/images/icons/vet-design.png',
+		// profilePicture: '/images/me.jpg',
 	},
 ];
 
@@ -115,20 +119,20 @@ const Home: NextPage = () => {
 								text: 'Flutter & Dart',
 							},
 							{
-								image: '/images/icons/flutter.svg',
-								text: 'Flutter & Dart',
+								image: '/images/icons/bienveillance.png',
+								text: 'Bienveillance',
 							},
 							{
-								image: '/images/icons/flutter.svg',
-								text: 'Flutter & Dart',
+								image: '/images/icons/nextjs.svg',
+								text: 'NextJS',
 							},
 							{
-								image: '/images/icons/flutter.svg',
-								text: 'Flutter & Dart',
+								image: '/images/icons/diversity.png',
+								text: 'Travail d\'équipe',
 							},
 							{
-								image: '/images/icons/flutter.svg',
-								text: 'Flutter & Dart',
+								image: '/images/icons/graphql.svg',
+								text: 'GraphQL',
 							},
 						]}
 					/>
