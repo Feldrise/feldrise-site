@@ -157,12 +157,13 @@ const Home: NextPage = () => {
 								nextEl: '.nextSwipe',
 								prevEl: '.prevSwipe',
 							}}
-							autoplay={{
+							autoplay={reviews.length > 1 && {
 								delay: 3000,
 								disableOnInteraction: false,
 								pauseOnMouseEnter: true,
 							}}
 							loop={true}
+							allowTouchMove={reviews.length > 1}
 						>
 							{reviews.map((review, index) => (
 								<SwiperSlide key={index} className="m-auto">
@@ -181,12 +182,16 @@ const Home: NextPage = () => {
 								</SwiperSlide>
 							))}
 						</Swiper>
-						<button className="prevSwipe absolute top-1/2 -translate-y-1/2 md:-translate-x-20 z-20">
-							<FontAwesomeIcon icon={faChevronLeft} className="text-3xl text-secondary"/>
-						</button>
-						<button className="nextSwipe absolute top-1/2 right-0 -translate-y-1/2 md:translate-x-20 z-20">
-							<FontAwesomeIcon icon={faChevronRight} className="text-3xl text-secondary"/>
-						</button>
+						{reviews.length > 1 ? (
+							<>
+								<button className="prevSwipe absolute top-1/2 -translate-y-1/2 md:-translate-x-20 z-20">
+									<FontAwesomeIcon icon={faChevronLeft} className="text-3xl text-secondary"/>
+								</button>
+								<button className="nextSwipe absolute top-1/2 right-0 -translate-y-1/2 md:translate-x-20 z-20">
+									<FontAwesomeIcon icon={faChevronRight} className="text-3xl text-secondary"/>
+								</button>
+							</>
+						) : null}
 					</div>
 				</Section>
 			</div>
