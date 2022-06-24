@@ -19,8 +19,7 @@ interface IProjectTech {
 
 interface IProject {
 	label: string;
-	name: string;
-	url: string;
+	name: string
 	images: string[];
 	desc: string;
 	infos?: IProjectInfo[];
@@ -29,41 +28,36 @@ interface IProject {
 
 export const projects: IProject[] = [
 	{
-		label: 'MyDemenageur',
-		name: 'mydemenageur',
-		url: 'https://mydemenageur.com',
+		label: 'Pluctis',
+		name: 'pluctis',
 		images: [
-			'/images/projects/mydemenageur/main.webp',
-			'/images/projects/mydemenageur/1.webp',
-			'/images/projects/mydemenageur/2.webp',
+			'/images/projects/pluctis.png',
+			'/images/projects/pluctis.png',
+			'/images/projects/pluctis.png',
 		],
-		desc: 'La plateform d\'aide au déménagements et services liés.',
+		desc: 'Janvier 2021 - Mars 2021',
 		infos: [
 			{
+				name: 'Terminé',
+				value: '01 avril 2022',
+			},
+			{
 				name: 'Client',
-				value: 'SOLID\'R (MyDemenageur & MyJugaad)',
+				value: 'Pluctis Inc.',
 			},
 			{
 				name: 'Rôle',
-				value: 'Développeur fullstack & CTO',
+				value: 'Développeur fullstack',
 			},
 			{
 				name: 'Type',
-				value: 'Plateform complête',
+				value: 'App mobile',
 			},
 		],
 		techs: [
 			{
 				name: 'Flutter & Dart',
 				icon: '/images/icons/flutter.svg',
-			},
-			{
-				name: 'NextJS',
-				icon: '/images/icons/nextjs.svg',
-			},
-			{
-				name: '.NET Core 5',
-				icon: '/images/icons/netcore.svg',
 			},
 		],
 	},

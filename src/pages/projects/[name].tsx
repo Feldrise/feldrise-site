@@ -3,7 +3,7 @@ import Section from '../../components/organisms/Section';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css';
-import NavIndicator from '../../components/atoms/NavIndicator';
+import NavIndicator from '../../components/NavIndicator';
 import {useRouter} from 'next/router';
 import Infos from '../../components/atoms/Projects/Infos';
 import Image from 'next/image';
@@ -48,9 +48,7 @@ const Project: NextPage = () => {
 									</div>
 								)}
 							</div>
-							<a className="text-3xl text-secondary hover:text-primary duration-300" href={project.url} target="_blank" rel="noreferrer">
-								Site du projet
-							</a>
+							<a className="text-3xl text-secondary hover:text-primary duration-300">Voir l&apos;app</a>
 						</div>
 					}
 				</div>
