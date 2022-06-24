@@ -68,7 +68,7 @@ const Offers: NextPage = () => {
 				</div>
 			</Section>
 			<Section
-				className="my-8 py-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-4" style={{
+				className="my-8 py-8 flex flex-col xl:grid xl:grid-cols-2 xl:grid-rows-2 gap-4" style={{
 					backgroundImage: 'url("/images/cat-background.svg")',
 					backgroundSize: 'cover',
 				}}
@@ -121,7 +121,7 @@ const Offers: NextPage = () => {
 				</div>
 			</Section>
 			<Section
-				className="my-8 py-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-4"
+				className="my-8 py-8 flex flex-col xl:grid xl:grid-cols-2 xl:grid-rows-2 gap-4"
 				ref={offer2Ref}
 				id="offer2"
 			>
