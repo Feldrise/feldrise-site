@@ -5,8 +5,7 @@ import GeometricObject from '../components/atoms/Offers/GeometricObject';
 import React from 'react';
 import Card from '../components/atoms/Offers/Card';
 import Button from '../components/atoms/Button';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import ContactButton from '../components/atoms/Offers/ContactButton';
 
 const Offers: NextPage = () => {
 	const offer1Ref = React.useRef<HTMLElement>(null);
@@ -109,15 +108,7 @@ const Offers: NextPage = () => {
 					</p>
 				</div>
 				<div className="flex justify-center">
-					<Button
-						className="h-fit !bg-primary !text-white hover:!bg-primary-dark"
-						onClick={() => document.querySelector('#contact')?.scrollIntoView({
-							behavior: 'smooth',
-							block: 'center',
-						})}
-					>
-						Contact <FontAwesomeIcon icon={faEnvelope} className="text-3xl"/>
-					</Button>
+					<ContactButton />
 				</div>
 			</Section>
 			<Section
@@ -154,15 +145,7 @@ const Offers: NextPage = () => {
 				</div>
 				<div className="flex flex-col gap-8">
 					<div className="flex justify-center">
-						<Button
-							className="h-fit !bg-primary !text-white hover:!bg-primary-dark"
-							onClick={() => document.querySelector('#contact')?.scrollIntoView({
-								behavior: 'smooth',
-								block: 'center',
-							})}
-						>
-							Contact <FontAwesomeIcon icon={faEnvelope} className="text-3xl"/>
-						</Button>
+						<ContactButton />
 					</div>
 					<p className="text-lg">
 						La prestation coûte au total 3000€ par mois, ce qui veut dire qu&aposavec vec un investissement très corrrect vous pouvez
