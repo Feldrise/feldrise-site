@@ -148,7 +148,7 @@ const Offers: NextPage = () => {
 						<ContactButton />
 					</div>
 					<p className="text-lg">
-						La prestation coûte au total 3000€ par mois, ce qui veut dire qu&aposavec vec un investissement très corrrect vous pouvez
+						La prestation coûte au total 3000€ par mois, ce qui veut dire qu&apos;avec un investissement très correct vous pouvez
 						rapidement avoir des résultats.
 					</p>
 				</div>
