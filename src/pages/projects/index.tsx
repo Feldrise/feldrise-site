@@ -37,7 +37,7 @@ export const projects: IProject[] = [
 			'/images/projects/mydemenageur/1.webp',
 			'/images/projects/mydemenageur/2.webp',
 		],
-		desc: 'La plateform d\'aide au déménagements et services liés.',
+		desc: 'La plateforme d\'aide au déménagement et services liés.',
 		infos: [
 			{
 				name: 'Client',
