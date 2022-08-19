@@ -10,7 +10,7 @@ type GLTFResults = GLTF & {
 }
 
 const RoundedCylinder = (props: MeshProps) => {
-	const {nodes, materials} = useGLTF('models/rounded_cylinder.gltf') as GLTFResults;
+	const {nodes, materials} = useGLTF('models/rounded_cylinder.gltf') as unknown as GLTFResults;
 
 	return <mesh {...props} geometry={nodes.Cylinder.geometry} material={materials.material} />;
 };
