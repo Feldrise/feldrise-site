@@ -160,6 +160,9 @@ const Offers: NextPage = () => {
 				id="offer2"
 			>
 				<h2>Offre 2 : Le petit audit</h2>
+				<p className="w-1/4 p-2 bg-secondary rounded-xl">
+					À partir de 190€ la journée
+				</p>
 				<div className='height-4'/>
 				<h3>Contenu</h3>
 				<p>
@@ -249,7 +252,7 @@ const Offers: NextPage = () => {
 							Nous vous aidons à créer un plan d&apos;action claire pour la suite de votre entreprise,
 							et nous vous aidons même a organiser votre prévisionnel sur le budget future.
 						</p>
-						<div className="w-full p-8 bg-primary rounded-xl">
+						<div className="w-full p-8 bg-secondary rounded-xl">
 							<div className='grid grid-cols-4'>
 								<h3 className='col-span-3'>Et le prix ?</h3>
 								<span className='self-end text-center'><FontAwesomeIcon icon={faEuro} className="w-[32px] h-[32px]"/></span>
@@ -272,6 +275,7 @@ const Offers: NextPage = () => {
 						</Button>
 						<div className="h-[260px]">
 							<GeometricObject
+								mesh='cylinder'
 								scale={2}
 								shadowOffsetY={3}
 							/>

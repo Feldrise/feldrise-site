@@ -6,7 +6,10 @@ import {faLinkedinIn, faFacebookF} from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
 	return (
 		<Section className="py-12 flex justify-between items-center">
-			<span className="text-xl">Copyright © 2022 Feldrise</span>
+			<span className="text-xl">
+				Copyright © 2022 <span className='text-primary'>Feldrise</span>
+				&nbsp;x&nbsp;
+				<a className='text-secondary' href="https://suiramdev.com/" rel="noreferrer" target="_blank">suiramdev</a></span>
 			<div className="flex gap-4">
 				<a href="https://fr.linkedin.com/in/feldrise" target="_blank" rel="noreferrer">
 					<FontAwesomeIcon icon={faLinkedinIn} className="text-3xl"/>
