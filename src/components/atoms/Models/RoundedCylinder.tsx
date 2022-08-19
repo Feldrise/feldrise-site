@@ -1,12 +1,17 @@
 import React from 'react';
 import {useGLTF} from '@react-three/drei';
 import {MeshProps} from '@react-three/fiber';
+import {Material, Mesh} from 'three';
+import {GLTF} from 'three/examples/jsm/loaders/GLTFLoader';
+
+type GLTFResults = GLTF & {
+	nodes: Record<string, Mesh>
+	materials: Record<string, Material>
+}
 
 const RoundedCylinder = (props: MeshProps) => {
-	const {nodes, materials} = useGLTF('models/rounded_cylinder.gltf');
+	const {nodes, materials} = useGLTF('models/rounded_cylinder.gltf') as GLTFResults;
 
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-	// @ts-ignore
 	return <mesh {...props} geometry={nodes.Cylinder.geometry} material={materials.material} />;
 };
 
