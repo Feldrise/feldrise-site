@@ -74,7 +74,7 @@ const Home: NextPage = () => {
 						sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
 					</p>
 					<div className="py-4 flex flex-col lg:flex-row items-center lg:items-start gap-7">
-						<Card 
+						<Card
 							mesh="sphere"
 							content={(
 								<>
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
 										<br/>
 										<p>
 											Feldrise vous propose un Workshop pour vous expliquer comment
-											s'architecture un produit informatique et comment efficacement le développer
+											s&apos;architecture un produit informatique et comment efficacement le développer
 										</p>
 									</div>
 									<Button className="!w-full my-4 px-0" href="/offers#offer1">
@@ -100,7 +100,7 @@ const Home: NextPage = () => {
 										<h3 className="mb-2 text-center">Petit Audit</h3>
 										<br/>
 										<p>
-											Feldrise se propose d&apos;intervenir pendant quelques jours dans votre entreprise 
+											Feldrise se propose d&apos;intervenir pendant quelques jours dans votre entreprise
 											afin de vous aider à voir plus clair dans les perspéctives d&apos;évolutions de votre projet
 										</p>
 									</div>
@@ -156,7 +156,13 @@ const Home: NextPage = () => {
 							},
 						]}
 					/>
-					<a className="pb-28" href="https://www.flaticon.com/authors/freepik" target="_blank" title="freepik icons">Icons created by Freepik - Flaticon</a>
+					<a
+						className="pb-28"
+						href="https://www.flaticon.com/authors/freepik"
+						target="_blank"
+						rel="noreferrer"
+						title="freepik icons"
+					>Icons created by Freepik - Flaticon</a>
 
 					<div className="flex flex-col md:flex-row gap-8">
 						<PortraitImage className="hidden lg:block"/>

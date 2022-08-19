@@ -33,7 +33,7 @@ const Offers: NextPage = () => {
 				</p>
 				{/* LA LISTE DES OFFRES */}
 				<div className="py-4 flex flex-col lg:flex-row items-center lg:items-start gap-7">
-					<Card 
+					<Card
 						mesh="sphere"
 						content={(
 							<>
@@ -42,7 +42,7 @@ const Offers: NextPage = () => {
 									<br/>
 									<p>
 										Feldrise vous propose un Workshop pour vous expliquer comment
-										s'architecture un produit informatique et comment efficacement le développer
+										s&apos;architecture un produit informatique et comment efficacement le développer
 									</p>
 								</div>
 								<Button className="!w-full my-4 px-0" onClick={() => scrollIntoView(offer1Ref)}>
@@ -59,7 +59,7 @@ const Offers: NextPage = () => {
 									<h3 className="mb-2 text-center">Petit Audit</h3>
 									<br/>
 									<p>
-										Feldrise se propose d&apos;intervenir pendant quelques jours dans votre entreprise 
+										Feldrise se propose d&apos;intervenir pendant quelques jours dans votre entreprise
 										afin de vous aider à voir plus clair dans les perspéctives d&apos;évolutions de votre projet
 									</p>
 								</div>
@@ -92,7 +92,7 @@ const Offers: NextPage = () => {
 
 			{/* OFFRE 1 */}
 			<Section
-				className="border-y-2 border-primary backdrop-brightness-0 mt-16 py-16 w-full flex flex-col gap-4" 
+				className="border-y-2 border-primary backdrop-brightness-0 mt-16 py-16 w-full flex flex-col gap-4"
 				style={{
 					backgroundImage: 'url("/images/cat-background.svg")',
 					backgroundSize: 'cover',
@@ -105,7 +105,7 @@ const Offers: NextPage = () => {
 				<h3>Contenu</h3>
 				<p>
 					Lors de ce Workshop, nous vous présenterons les technologies passés et existante, ainsi que les différents moyen
-					d'architecturer son produit. Nous vous présenterons aussi comment internaliser le développement de votre produit ou 
+					d&apos;architecturer son produit. Nous vous présenterons aussi comment internaliser le développement de votre produit ou
 					comment travailler au mieux avec des préstataires externes.
 				</p>
 				<Value
@@ -155,7 +155,7 @@ const Offers: NextPage = () => {
 
 			{/* OFFRE 2 */}
 			<Section
-				className="border-y-2 border-primary py-16 w-full flex flex-col gap-4" 
+				className="border-y-2 border-primary py-16 w-full flex flex-col gap-4"
 				ref={offer2Ref}
 				id="offer2"
 			>
@@ -213,7 +213,7 @@ const Offers: NextPage = () => {
 
 			{/* OFFRE 3 */}
 			<Section
-				className="border-y-2 border-primary backdrop-brightness-0 py-16 w-full flex flex-col gap-4" 
+				className="border-y-2 border-primary backdrop-brightness-0 py-16 w-full flex flex-col gap-4"
 				style={{
 					backgroundImage: 'url("/images/cat-background.svg")',
 					backgroundSize: 'cover',
@@ -221,7 +221,7 @@ const Offers: NextPage = () => {
 				ref={offer3Ref}
 				id="offer3"
 			>
-				<h2>Offre 3 : L'accompagnement </h2>
+				<h2>Offre 3 : L&apos;accompagnement </h2>
 				<p>
 					Nous vous aidons à développer votre entreprise en internalisant le développement.
 					Parce que nous savons par expérience qu&apos;un prestataire externe peut se reveler très cher pour votre

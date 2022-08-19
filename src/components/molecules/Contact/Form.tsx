@@ -43,7 +43,7 @@ const Form = () => {
 	};
 
 	return (
-		<GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_CAPTCHA_SITE}>
+		<GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_CAPTCHA_SITE ?? ''}>
 			<form className="w-full p-8 flex flex-col justify-center items-center gap-4" onSubmit={handleSubmit(onSubmit)}>
 				<FieldGroup>
 					<Field label="Nom et prénom" placeholder="Clément Tine" name="fullName" register={register} required/>
