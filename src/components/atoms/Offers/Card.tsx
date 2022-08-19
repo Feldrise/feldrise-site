@@ -9,7 +9,7 @@ interface ICardProps {
 
 const Card = (props: ICardProps) => {
 	return (
-		<div className="relative w-[300px] h-[600px] flex flex-col justify-end rounded-3xl border-4 border-solid border-primary">
+		<div className="relative w-[300px] h-[640px] flex flex-col justify-end rounded-3xl border-4 border-solid border-primary p-4">
 			<div className="absolute w-full h-full top-0 left-O">
 				<GeometricObject
 					mesh={props.mesh}
