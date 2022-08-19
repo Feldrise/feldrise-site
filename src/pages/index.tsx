@@ -101,7 +101,7 @@ const Home: NextPage = () => {
 										<br/>
 										<p>
 											Feldrise se propose d&apos;intervenir pendant quelques jours dans votre entreprise
-											afin de vous aider à voir plus clair dans les perspéctives d&apos;évolutions de votre projet
+											afin de vous aider à voir plus clair dans les perspectives d&apos;évolutions de votre projet
 										</p>
 									</div>
 									<Button className="!w-full my-4 px-0" href="/offers#offer2">
@@ -162,7 +162,7 @@ const Home: NextPage = () => {
 						target="_blank"
 						rel="noreferrer"
 						title="freepik icons"
-					>Icons created by Freepik - Flaticon</a>
+					>Icones créées par Freepik - Flaticon</a>
 
 					<div className="flex flex-col md:flex-row gap-8">
 						<PortraitImage className="hidden lg:block"/>

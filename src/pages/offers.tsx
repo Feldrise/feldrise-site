@@ -28,8 +28,8 @@ const Offers: NextPage = () => {
 				<h2>Nos offres</h2>
 				<p>
 					Feldrise vous propose plusieurs d&apos;offres, pour répondre à tous les besoins.
-					Que vous souhaitiez simplement découvrir nos services ou que vous aillez besoin d&apos;un plus grand accompagnement,
-					nous avons ce qu&apos;il vous faut. Bien sur, prendre contact avec nous est et sera toujours gratuit !
+					Que vous souhaitiez simplement découvrir nos services ou que vous ayez besoin d&apos;un plus grand accompagnement,
+					nous avons ce qu&apos;il vous faut. Bien sûr, prendre contact avec nous est et sera toujours gratuit !
 				</p>
 				{/* LA LISTE DES OFFRES */}
 				<div className="py-4 flex flex-col lg:flex-row items-center lg:items-start gap-7">
@@ -60,7 +60,7 @@ const Offers: NextPage = () => {
 									<br/>
 									<p>
 										Feldrise se propose d&apos;intervenir pendant quelques jours dans votre entreprise
-										afin de vous aider à voir plus clair dans les perspéctives d&apos;évolutions de votre projet
+										afin de vous aider à voir plus clair dans les perspectives d&apos;évolutions de votre projet
 									</p>
 								</div>
 								<Button className="!w-full my-4 px-0" onClick={() => scrollIntoView(offer2Ref)}>
@@ -77,7 +77,7 @@ const Offers: NextPage = () => {
 									<h3 className="mb-2 text-center">Grand Accompagnement</h3>
 									<br/>
 									<p>
-										Parce que nous sommes convaincu de l&apos;intérêt d&apos;internaliser votre équipe,
+										Parce que nous sommes convaincus de l&apos;intérêt d&apos;internaliser votre équipe,
 										nous vous accompagnons dans toutes les étapes de ce processus.
 									</p>
 								</div>
@@ -104,15 +104,15 @@ const Offers: NextPage = () => {
 				<div className='height-4'/>
 				<h3>Contenu</h3>
 				<p>
-					Lors de ce Workshop, nous vous présenterons les technologies passés et existante, ainsi que les différents moyen
+					Lors de ce Workshop, nous vous présenterons les technologies passés et existantes, ainsi que les différents moyen
 					d&apos;architecturer son produit. Nous vous présenterons aussi comment internaliser le développement de votre produit ou
 					comment travailler au mieux avec des préstataires externes.
 				</p>
 				<Value
-					content='Un état des lieux détaillé sur les technologies actuels et bonne pratiques du moment.'
+					content='Un état des lieux détaillé sur les technologies actuelles et bonnes pratiques du moment.'
 				/>
 				<Value
-					content='Une reflexion sur comment votre application devrait être architecturé.'
+					content='Une reflexion sur comment votre application devrait être architecturée.'
 				/>
 				<Value
 					content='Une réléxion sur comment optimiser votre développement avec votre préstataire ou en internalisant.'
@@ -121,15 +121,15 @@ const Offers: NextPage = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-3">
 					<div className="w-full col-span-2 flex flex-col gap-4">
 						<h3>Pourquoi ?</h3>
-						<h4>Des résultats</h4>
+						<h4>Des connaissances</h4>
 						<p>
-							Nous vous aidons à créer un plan d&apos;action claire pour la suite de votre entreprise,
-							et nous vous aidons même a organiser votre prévisionnel sur le budget future.
+							Nous vous apportons quelques connaissances utiles qui vous aideront à mieux comprendre
+							votre environement et comment fonctionne le développement informatique.
 						</p>
 						<h4>Un plus pour votre entreprise</h4>
 						<p>
-							Nous vous aidons à créer une vision commune pour motiver vos troupes et surtout réduire votre temps de développement.
-							Vous pouvez ainsi vous lancer dans la suite en sachant parfaitement à quoi vous attendre.
+							Bien comprendre comment travailler avec vos préstataires ou même comment travaillent vos
+							développeurs vous permet une meilleure cohésion au sein de votre entreprise.
 						</p>
 					</div>
 					<div className="w-full items-center mt-8 lg:mt-0 flex flex-col gap-4">
@@ -173,7 +173,7 @@ const Offers: NextPage = () => {
 				/>
 				<Value
 					content="ne mise en pratique de ce que nous vous proposont, notamment la reflexion sur les bonnes pratiques
-							applicable et comment les appliquer de manière  concrête sur vos problèmes, les nouveaux outils que vous
+							applicable et comment les appliquer de manière concrête sur vos problèmes, les nouveaux outils que vous
 							pouvez utiliser et nous vous accompagerons dans la résolution d'un premier problème."
 				/>
 				<div className="height-16" />
