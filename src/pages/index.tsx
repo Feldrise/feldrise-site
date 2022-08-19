@@ -61,7 +61,7 @@ const Home: NextPage = () => {
 					</div>
 					<div>
 						<span className="mr-6 font-bold text-4xl">Digital Agency</span>
-						<span className="italic text-2xl">basée à Rennes</span>
+						<span className="italic text-2xl">CTO as a sevice<br/>basée à Rennes</span>
 					</div>
 					<Button className="text-white" href="/offers">Voir les offres</Button>
 				</div>
@@ -74,18 +74,37 @@ const Home: NextPage = () => {
 						sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
 					</p>
 					<div className="py-4 flex flex-col lg:flex-row items-center lg:items-start gap-7">
+						<Card 
+							mesh="sphere"
+							content={(
+								<>
+									<div>
+										<h3 className="mb-2 text-center">Workshops</h3>
+										<br/>
+										<p>
+											Feldrise vous propose un Workshop pour vous expliquer comment
+											s'architecture un produit informatique et comment efficacement le développer
+										</p>
+									</div>
+									<Button className="!w-full my-4 px-0" href="/offers#offer1">
+										Voir l&apos;offre
+									</Button>
+								</>
+							)}
+						/>
 						<Card
 							mesh="torus"
 							content={(
 								<>
 									<div>
 										<h3 className="mb-2 text-center">Petit Audit</h3>
+										<br/>
 										<p>
-											Feldrise se propose d&apos;intervenir pendant quelques jours afin de vous aider à voir
-											plus clair dans les perspéctives d&apos;évolutions de votre projet
+											Feldrise se propose d&apos;intervenir pendant quelques jours dans votre entreprise 
+											afin de vous aider à voir plus clair dans les perspéctives d&apos;évolutions de votre projet
 										</p>
 									</div>
-									<Button className="!w-full my-4 px-0" href="/offers#offer1">
+									<Button className="!w-full my-4 px-0" href="/offers#offer2">
 										Voir l&apos;offre
 									</Button>
 								</>
@@ -97,12 +116,13 @@ const Home: NextPage = () => {
 								<>
 									<div>
 										<h3 className="mb-2 text-center">Grand Accompagnement</h3>
+										<br/>
 										<p>
 											Parce que nous sommes convaincu de l&apos;intérêt d&apos;internaliser votre équipe,
 											nous vous accompagnons dans toutes les étapes de ce processus.
 										</p>
 									</div>
-									<Button className="!w-full my-4 px-0" href="/offers#offer2">
+									<Button className="!w-full my-4 px-0" href="/offers#offer3">
 										Voir l&apos;offre
 									</Button>
 								</>
@@ -112,37 +132,39 @@ const Home: NextPage = () => {
 				</Section>
 				<Section className="flex flex-col items-center">
 					<ValueBanner
-						className="py-28"
+						className="pt-28"
 						values={[
 							{
-								image: '/images/icons/flutter.svg',
-								text: 'Flutter & Dart',
+								image: '/images/icons/moderne.webp',
+								text: 'Moderne',
 							},
 							{
 								image: '/images/icons/bienveillance.png',
 								text: 'Bienveillance',
 							},
 							{
-								image: '/images/icons/nextjs.svg',
-								text: 'NextJS',
+								image: '/images/icons/flexibility.png',
+								text: 'Flexible',
 							},
 							{
 								image: '/images/icons/diversity.png',
 								text: 'Travail d\'équipe',
 							},
 							{
-								image: '/images/icons/graphql.svg',
-								text: 'GraphQL',
+								image: '/images/icons/organized.png',
+								text: 'Organisé',
 							},
 						]}
 					/>
+					<a className="pb-28" href="https://www.flaticon.com/authors/freepik" target="_blank" title="freepik icons">Icons created by Freepik - Flaticon</a>
+
 					<div className="flex flex-col md:flex-row gap-8">
 						<PortraitImage className="hidden lg:block"/>
 						<div className="flex flex-col justify-center gap-4">
 							<p className="leading-10">
 								Chez Feldrise, les maîtres mots sont{' '}
-								<Highlight>bienveillance, écoute et tolérance.</Highlight>
-								<br/>Le client doit pouvoir se sentir à l’aise, compris et comprendre immédiament l&apos;interêt de passer par nous.
+								<Highlight>bienveillance</Highlight> <Highlight>écoute</Highlight> et <Highlight>tolérance</Highlight>.
+								Le client doit pouvoir se sentir à l’aise, compris et comprendre immédiament l&apos;interêt de passer par nous.
 							</p>
 							<Button href="/offers">Voir les offres</Button>
 						</div>

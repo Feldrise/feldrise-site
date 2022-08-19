@@ -59,7 +59,7 @@ const NavBar = () => {
 						<Image src="/images/logo-white-small.svg" width={75} height={75} alt="Website's logo"/>
 					</a>
 				</Link>
-				<div className="hidden xl:flex gap-8">
+				<div className="hidden xl:flex px-8 gap-8">
 					{routes.map((route, index) =>
 						<Link href={route.href} key={index}>
 							<a className={cx(
