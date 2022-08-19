@@ -15,7 +15,6 @@ import 'swiper/css';
 import {Autoplay, Navigation} from 'swiper';
 import 'swiper/css/navigation';
 import Card from '../components/atoms/Offers/Card';
-import OffersMiniList from '../components/organisms/OffersMiniList';
 
 interface IReview {
 	author: string;

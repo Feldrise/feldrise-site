@@ -7,7 +7,6 @@ import Card from '../components/atoms/Offers/Card';
 import Button from '../components/atoms/Button';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faEuro} from '@fortawesome/free-solid-svg-icons';
-import OffersMiniList from '../components/organisms/OffersMiniList';
 
 const Offers: NextPage = () => {
 	const offer1Ref = React.useRef<HTMLElement>(null);
