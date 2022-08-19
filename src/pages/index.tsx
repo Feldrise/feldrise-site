@@ -132,37 +132,39 @@ const Home: NextPage = () => {
 				</Section>
 				<Section className="flex flex-col items-center">
 					<ValueBanner
-						className="py-28"
+						className="pt-28"
 						values={[
 							{
-								image: '/images/icons/flutter.svg',
-								text: 'Flutter & Dart',
+								image: '/images/icons/moderne.webp',
+								text: 'Moderne',
 							},
 							{
 								image: '/images/icons/bienveillance.png',
 								text: 'Bienveillance',
 							},
 							{
-								image: '/images/icons/nextjs.svg',
-								text: 'NextJS',
+								image: '/images/icons/flexibility.png',
+								text: 'Flexible',
 							},
 							{
 								image: '/images/icons/diversity.png',
 								text: 'Travail d\'équipe',
 							},
 							{
-								image: '/images/icons/graphql.svg',
-								text: 'GraphQL',
+								image: '/images/icons/organized.png',
+								text: 'Organisé',
 							},
 						]}
 					/>
+					<a className="pb-28" href="https://www.flaticon.com/authors/freepik" target="_blank" title="freepik icons">Icons created by Freepik - Flaticon</a>
+
 					<div className="flex flex-col md:flex-row gap-8">
 						<PortraitImage className="hidden lg:block"/>
 						<div className="flex flex-col justify-center gap-4">
 							<p className="leading-10">
 								Chez Feldrise, les maîtres mots sont{' '}
-								<Highlight>bienveillance, écoute et tolérance.</Highlight>
-								<br/>Le client doit pouvoir se sentir à l’aise, compris et comprendre immédiament l&apos;interêt de passer par nous.
+								<Highlight>bienveillance</Highlight> <Highlight>écoute</Highlight> et <Highlight>tolérance</Highlight>.
+								Le client doit pouvoir se sentir à l’aise, compris et comprendre immédiament l&apos;interêt de passer par nous.
 							</p>
 							<Button href="/offers">Voir les offres</Button>
 						</div>
