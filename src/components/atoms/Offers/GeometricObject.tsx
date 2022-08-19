@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import {Canvas} from '@react-three/fiber';
 import {PerspectiveCamera, softShadows} from '@react-three/drei';
 import {MathUtils, Vector3} from 'three';
 import RotatingMesh from '../RotatingMesh';
+import RoundedCylinder from '../Models/RoundedCylinder';
 
 export type GeometricMeshes = 'torus' | 'cylinder' | 'sphere';
 
@@ -39,7 +40,9 @@ const GeometricObject = ({mesh = 'torus', position = new Vector3(0, 0, 0), scale
 					castShadow
 				>
 					{mesh === 'torus' && <torusBufferGeometry args={[0.8 * scale, 0.15 * scale, 24, 64]}/>}
-					{mesh === 'cylinder' && <cylinderBufferGeometry args={[0.7 * scale, 0.7 * scale, 1.3 * scale, 32]}/>}
+					{mesh === 'cylinder' && <Suspense fallback={null}>
+						<RoundedCylinder scale={[0.7 * scale, 0.7 * scale, 0.7 * scale]}/>
+					</Suspense>}
 					{mesh === 'sphere' && <sphereBufferGeometry args={[0.7 * scale, 64, 4]}/>}
 					<meshStandardMaterial color="#AA33FF"/>
 				</RotatingMesh>
