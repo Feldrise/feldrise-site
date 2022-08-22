@@ -104,18 +104,20 @@ const Offers: NextPage = () => {
 				<div className='height-4'/>
 				<h3>Contenu</h3>
 				<p>
-					Lors de ce Workshop, nous vous présenterons les technologies passés et existantes, ainsi que les différents moyens
-					d&apos;architecturer son produit. Nous vous présenterons aussi comment internaliser le développement de votre produit ou
-					comment travailler au mieux avec des prestataires externes.
+					Lors de ce Workshop, nous vulgarisons le développement informatique afin de vous
+					montrer les différents enjeux que peuvent rencontrer vos développeurs ou même les
+					prestataires avec qui vous travaillez.<br/>Nous abordons ensuite tout ce qu&apos;il faut
+					savoir pour travailler au mieux avec vos prestataires et l&apos;intérêt d&apos;internaliser
+					votre développement.
 				</p>
 				<Value
-					content='Un état des lieux détaillé sur les technologies actuelles et bonnes pratiques du moment'
+					content='Une vulgarisation des technologies du moment et leur utilisation'
 				/>
 				<Value
-					content='Une réflexion sur comment votre application devrait être architecturée'
+					content='Une réflexion sur les différentes architectures et la scalabilité d&apos;un projet'
 				/>
 				<Value
-					content='Une réflexion sur comment optimiser votre développement avec votre prestataire ou en internalisant'
+					content='Comment internaliser mon développement ? Comment travailler efficacement avec mes prestataires externes ?'
 				/>
 				<div className="height-16" />
 				<div className="grid grid-cols-1 lg:grid-cols-3">
