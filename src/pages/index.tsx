@@ -18,26 +18,27 @@ import Card from '../components/atoms/Offers/Card';
 
 interface IReview {
 	author: string;
+	company: string;
 	content: string;
-	icon: string;
 	profilePicture?: string;
 }
 
 const reviews: IReview[] = [
-	// {
-	// 	author: 'Capago (Galien)',
-	// 	content: `Nous avons travaillé avec Victor pour le développement de notre application.
-	// 			  Il a su répondre parfaitement à nos demandes ainsi qu\'être une véritable force
-	// 			  de proposition tout au long du projet. Sérieux et compétent, je recommande
-	// 			  fortement Victor.`,
-	// 	icon: '/images/icons/microsoft.png',
-	// },
 	{
-		author: 'Vet-Design (Yohann HUCHET)',
+		author: 'Galien',
+		company: 'Capago',
+		content: `Nous avons travaillé avec Victor pour le développement de notre application.
+				  Il a su répondre parfaitement à nos demandes ainsi qu\'être une véritable force
+				  de proposition tout au long du projet. Sérieux et compétent, je recommande
+				  fortement Victor.`,
+		profilePicture: '/images/reviews/galien.jpeg',
+	},
+	{
+		author: 'Yohann HUCHET',
+		company: 'Vet-Design',
 		content: `Feldrise est très compétent, à l'écoute et de bons conseils. Passionné ils aiment être challengé pour aboutir au résultat demandé.
 				  N'hesitez pas à travailler avec eux.`,
-		icon: '/images/icons/vet-design.png',
-		// profilePicture: '/images/me.jpg',
+		profilePicture: '/images/reviews/yohann.jpeg',
 	},
 ];
 
@@ -118,8 +119,8 @@ const Home: NextPage = () => {
 										<h3 className="mb-2 text-center">Grand Accompagnement</h3>
 										<br/>
 										<p>
-											Parce que nous sommes convaincu de l&apos;intérêt d&apos;internaliser votre équipe,
-											nous vous accompagnons dans toutes les étapes de ce processus.
+											Parce que nous sommes convaincus de l&apos;intérêt d&apos;internaliser votre équipe,
+											nous vous accompagnons dans toutes les étapes de ce processus
 										</p>
 									</div>
 									<Button className="!w-full my-4 px-0" href="/offers#offer3">
@@ -168,9 +169,9 @@ const Home: NextPage = () => {
 						<PortraitImage className="hidden lg:block"/>
 						<div className="flex flex-col justify-center gap-4">
 							<p className="leading-10">
-								Chez Feldrise, les maîtres mots sont{' '}
+								Chez Feldrise, les maîtres-mots sont{' '}
 								<Highlight>bienveillance</Highlight> <Highlight>écoute</Highlight> et <Highlight>tolérance</Highlight>.
-								Le client doit pouvoir se sentir à l’aise, compris et comprendre immédiament l&apos;interêt de passer par nous.
+								Le client doit pouvoir se sentir à l’aise, compris et comprendre immédiatement l&apos;intérêt de passer par nous.
 							</p>
 							<Button href="/offers">Voir les offres</Button>
 						</div>
@@ -196,11 +197,15 @@ const Home: NextPage = () => {
 								<SwiperSlide key={index} className="m-auto">
 									<div className="h-full px-8 md:px-0 flex justify-center items-center gap-4">
 										<div className="p-12 col-span-2 rounded-2xl bg-white text-black">
-											<Image src={review.icon} width={180} height={40} alt={`Logo avis de ${review.author}`}/>
-											<p className="my-8">
+											<p>
+												<span className='text-3xl text-primary'>{review.author}</span>
+												&nbsp;-&nbsp;
+												{review.company}
+											</p>
+											<div className='bg-primary my-2 h-1 w-1/3' />
+											<p className="mt-6">
 												{review.content}
 											</p>
-											<p>{review.author}</p>
 										</div>
 										{review.profilePicture &&
 											<PortraitImage image={review.profilePicture} className="hidden lg:block"/>

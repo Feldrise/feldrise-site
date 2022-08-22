@@ -78,7 +78,7 @@ const Offers: NextPage = () => {
 									<br/>
 									<p>
 										Parce que nous sommes convaincus de l&apos;intérêt d&apos;internaliser votre équipe,
-										nous vous accompagnons dans toutes les étapes de ce processus.
+										nous vous accompagnons dans toutes les étapes de ce processus
 									</p>
 								</div>
 								<Button className="!w-full my-4 px-0" onClick={() => scrollIntoView(offer3Ref)}>
@@ -104,18 +104,18 @@ const Offers: NextPage = () => {
 				<div className='height-4'/>
 				<h3>Contenu</h3>
 				<p>
-					Lors de ce Workshop, nous vous présenterons les technologies passés et existantes, ainsi que les différents moyen
+					Lors de ce Workshop, nous vous présenterons les technologies passés et existantes, ainsi que les différents moyens
 					d&apos;architecturer son produit. Nous vous présenterons aussi comment internaliser le développement de votre produit ou
-					comment travailler au mieux avec des préstataires externes.
+					comment travailler au mieux avec des prestataires externes.
 				</p>
 				<Value
-					content='Un état des lieux détaillé sur les technologies actuelles et bonnes pratiques du moment.'
+					content='Un état des lieux détaillé sur les technologies actuelles et bonnes pratiques du moment'
 				/>
 				<Value
-					content='Une reflexion sur comment votre application devrait être architecturée.'
+					content='Une réflexion sur comment votre application devrait être architecturée'
 				/>
 				<Value
-					content='Une réléxion sur comment optimiser votre développement avec votre préstataire ou en internalisant.'
+					content='Une réflexion sur comment optimiser votre développement avec votre prestataire ou en internalisant'
 				/>
 				<div className="height-16" />
 				<div className="grid grid-cols-1 lg:grid-cols-3">
@@ -123,12 +123,12 @@ const Offers: NextPage = () => {
 						<h3>Pourquoi ?</h3>
 						<h4>Des connaissances</h4>
 						<p>
-							Nous vous apportons quelques connaissances utiles qui vous aideront à mieux comprendre
-							votre environement et comment fonctionne le développement informatique.
+							Nous vous apportons quelques connaissances utiles qui vous aideront pour mieux comprendre
+							votre environnement et comment fonctionne le développement informatique.
 						</p>
 						<h4>Un plus pour votre entreprise</h4>
 						<p>
-							Bien comprendre comment travailler avec vos préstataires ou même comment travaillent vos
+							Bien comprendre comment travailler avec vos prestataires ou même comment travaillent vos
 							développeurs vous permet une meilleure cohésion au sein de votre entreprise.
 						</p>
 					</div>
@@ -166,18 +166,18 @@ const Offers: NextPage = () => {
 				<div className='height-4'/>
 				<h3>Contenu</h3>
 				<p>
-					Lors de ce petit audit qui dure entre 1 et 3 jours, nous vous proposeront 3 axes majeures
+					Lors de ce petit audit qui dure entre 1 et 3 jours, nous vous proposeront 3 axes majeurs
 				</p>
 				<Value
-					content="Une rencontre avec vous et vos équipes pour identifier votre activité et quels sont les axes d'améliorations."
+					content="Une rencontre avec vous et vos équipes pour identifier votre activité et quels sont les axes d'améliorations"
 				/>
 				<Value
-					content="Une construction ensemble d'un plan d'actions pour les différents intervenants de votre entreprise."
+					content="Une construction ensemble d'un plan d'actions pour les différents intervenants de votre entreprise"
 				/>
 				<Value
-					content="ne mise en pratique de ce que nous vous proposont, notamment la reflexion sur les bonnes pratiques
-							applicable et comment les appliquer de manière concrête sur vos problèmes, les nouveaux outils que vous
-							pouvez utiliser et nous vous accompagerons dans la résolution d'un premier problème."
+					content="Une mise en pratique de ce que nous vous proposons, notamment la réflexion sur les bonnes pratiques
+							applicable et comment les appliquer de manière concrète sur vos problèmes, les nouveaux outils que vous
+							pouvez utiliser et nous vous accompagnerons dans la résolution d'un premier problème"
 				/>
 				<div className="height-16" />
 				<div className="grid grid-cols-1 lg:grid-cols-3">
@@ -186,7 +186,7 @@ const Offers: NextPage = () => {
 						<h4>Des résultats</h4>
 						<p>
 							Nous vous aidons à créer un plan d&apos;action claire pour la suite de votre entreprise,
-							et nous vous aidons même a organiser votre prévisionnel sur le budget future.
+							et nous vous aidons même à organiser votre prévisionnel sur le budget futur.
 						</p>
 						<h4>Un plus pour votre entreprise</h4>
 						<p>
@@ -226,9 +226,9 @@ const Offers: NextPage = () => {
 			>
 				<h2>Offre 3 : L&apos;accompagnement </h2>
 				<p>
-					Nous vous aidons à développer votre entreprise en internalisant le développement.
-					Parce que nous savons par expérience qu&apos;un prestataire externe peut se reveler très cher pour votre
-					entreprise, et qu&apos;une équipe interne vous permet permet d&apos;améliorer constamment votre activité et
+					Nous vous aidons pour développer votre entreprise en internalisant le développement.
+					Parce que nous savons par expérience qu&apos;un prestataire externe peut se révéler très cher pour votre
+					entreprise, et qu&apos;une équipe interne vous permet d&apos;améliorer constamment votre activité et
 					surtout d&apos;améliorer les performances de votre entreprise.
 				</p>
 				<div className='height-4'/>
@@ -237,11 +237,11 @@ const Offers: NextPage = () => {
 					Nous vous proposons le support d&apos;un CTO de Feldrise pour vous accompagner dans les changements de votre entreprise.
 				</p>
 				<Value
-					content="Nous formons les personnes avec qui vous travaillez déjà pour intégrer une équipe de développeurs performants."
+					content="Nous formons les personnes avec qui vous travaillez déjà pour intégrer une équipe de développeurs performants"
 				/>
 				<Value
 					content="Si vous n'avez pas d'équipe, nous vous aidons dans le recrutement de vos futurs éléments clés (stagiaires,
-						apprantis, employés...) et bien sûr, nous les formons pour qu'ils soient rapidement opérationnels et efficaces."
+						apprentis, employés...) et bien sûr, nous les formons pour qu'ils soient rapidement opérationnels et efficaces"
 				/>
 				<div className="height-16" />
 				<div className="grid grid-cols-1 lg:grid-cols-3">
@@ -250,7 +250,7 @@ const Offers: NextPage = () => {
 						<h4>Des résultats</h4>
 						<p>
 							Nous vous aidons à créer un plan d&apos;action claire pour la suite de votre entreprise,
-							et nous vous aidons même a organiser votre prévisionnel sur le budget future.
+							et nous vous aidons même à organiser votre prévisionnel sur le budget futur.
 						</p>
 						<div className="w-full p-8 bg-secondary rounded-xl">
 							<div className='grid grid-cols-4'>
@@ -259,7 +259,7 @@ const Offers: NextPage = () => {
 							</div>
 							<div className="bg-white my-4 w-1/3 h-1" />
 							<p>
-								Nous vous proposons 30 jours (découpables par tranches de 2h pour plus de fléxibilité) répartissables sur 1 an au prix de 3500€
+								Nous vous proposons 30 jours (séparables par tranches de 2h pour plus de flexibilité) répartissables sur 1 an au prix de 3500€
 							</p>
 						</div>
 					</div>
