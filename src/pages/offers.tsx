@@ -163,7 +163,7 @@ const Offers: NextPage = () => {
 			>
 				<h2>Offre 2 : Le petit audit</h2>
 				<p className="w-1/4 p-2 bg-secondary rounded-xl">
-					À partir de 190€ la journée
+					À partir de 190€ HT la journée
 				</p>
 				<div className='height-4'/>
 				<h3>Contenu</h3>
@@ -262,6 +262,7 @@ const Offers: NextPage = () => {
 							<div className="bg-white my-4 w-1/3 h-1" />
 							<p>
 								Nous vous proposons 30 jours (séparables par tranches de 2h pour plus de flexibilité) répartissables sur 1 an au prix de 3500€
+								{' '}HT
 							</p>
 						</div>
 					</div>
