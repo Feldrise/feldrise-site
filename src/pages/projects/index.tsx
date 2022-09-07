@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import Project from '../../components/molecules/Project';
 import 'swiper/css';
 import cx from 'classnames';
+import Head from 'next/head';
 
 interface IProjectInfo {
 	name: string;
@@ -71,22 +72,39 @@ export const projects: IProject[] = [
 
 const Projects: NextPage = () =>
 	(
-		<Section className="my-20">
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-				{projects.map((project, index) => (
-					<Link key={project.name} href="/projects/[name]" as={`/projects/${project.name}`} passHref>
-						<Project
-							name={project.label}
-							image={project.images[0]}
-							desc={project.desc}
-							className={cx(
-								index % 2 !== 0 && 'mt-20',
-							)}
-						/>
-					</Link>
-				))}
-			</div>
-		</Section>
+		<>
+			<Head>
+				<title>Feldrise - Les projets accompangés</title>
+				<meta
+					name="description"
+					content="Vous trouverez une liste de projets que Feldrise a pu accompanger jusqu'a présent."
+				/>
+
+				<meta property="og:title" content="Feldrise - La solution CTO en Bretagne" />
+				<meta
+					property="og:descritpion"
+					content="Vous trouverez une liste de projets que Feldrise a pu accompanger jusqu'a présent."
+				/>
+				<meta property="og:url" content="https://feldrise.com" />
+				<meta property="og:image" content="https://feldrise.com/images/logo-white-small.png" />
+			</Head>
+			<Section className="my-20">
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+					{projects.map((project, index) => (
+						<Link key={project.name} href="/projects/[name]" as={`/projects/${project.name}`} passHref>
+							<Project
+								name={project.label}
+								image={project.images[0]}
+								desc={project.desc}
+								className={cx(
+									index % 2 !== 0 && 'mt-20',
+								)}
+							/>
+						</Link>
+					))}
+				</div>
+			</Section>
+		</>
 	);
 
 export default Projects;

@@ -7,6 +7,7 @@ import Card from '../components/atoms/Offers/Card';
 import Button from '../components/atoms/Button';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faEuro} from '@fortawesome/free-solid-svg-icons';
+import Head from 'next/head';
 
 const Offers: NextPage = () => {
 	const offer1Ref = React.useRef<HTMLElement>(null);
@@ -24,6 +25,23 @@ const Offers: NextPage = () => {
 
 	return (
 		<>
+			<Head>
+				<title>Feldrise - Les offres</title>
+				<meta
+					name="description"
+					content="Feldrise prpose plusieurs offres pour vous accompagner. Du petit audit jusqu'à une
+							 intervention d'un mois, nous aurons forcément quelque chose à vous proposer."
+				/>
+
+				<meta property="og:title" content="Feldrise - La solution CTO en Bretagne" />
+				<meta
+					property="og:descritpion"
+					content="Feldrise prpose plusieurs offres pour vous accompagner. Du petit audit jusqu'à une
+							 intervention d'un mois, nous aurons forcément quelque chose à vous proposer."
+				/>
+				<meta property="og:url" content="https://feldrise.com" />
+				<meta property="og:image" content="https://feldrise.com/images/logo-white-small.png" />
+			</Head>
 			<Section className="flex flex-col gap-4">
 				<h2>Nos offres</h2>
 				<p>
