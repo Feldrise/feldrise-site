@@ -62,7 +62,7 @@ const Home: NextPage = () => {
 
 				<meta property="og:title" content="Feldrise - La solution CTO en Bretagne" />
 				<meta
-					property="og:descritpion"
+					property="og:description"
 					content="Feldrise est une agence digitale Bretonne proposant un accompagnement complet dans la réalisation technique de votre projet."
 				/>
 				<meta property="og:url" content="https://feldrise.com" />
@@ -78,8 +78,8 @@ const Home: NextPage = () => {
 							<Image src="/images/logo-dark.svg" layout="fill" objectFit="contain" objectPosition="left" alt="Hero's background"/>
 						</div>
 						<div>
-							<span className="mr-6 font-bold text-4xl">Digital Agency</span>
-							<span className="italic text-2xl">CTO as a service<br/>basée à Rennes</span>
+							<h1 className="mr-6 font-bold text-4xl inline">Digital Agency</h1>
+							<h2 className="italic text-2xl inline">CTO as a service<br/>basée à Rennes</h2>
 						</div>
 						<Button className="text-white" href="/offers">Voir les offres</Button>
 					</div>
@@ -92,6 +92,7 @@ const Home: NextPage = () => {
 							sur de nombreux projets,<br/>ce qui en fait une référence dans le milieu.
 						</p>
 						<div className="py-4 flex flex-col lg:flex-row items-center lg:items-start gap-7">
+							<h2 className='hidden'>Nos offres</h2>
 							<Card
 								mesh="sphere"
 								content={(

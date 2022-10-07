@@ -82,7 +82,7 @@ const Projects: NextPage = () =>
 
 				<meta property="og:title" content="Feldrise - La solution CTO en Bretagne" />
 				<meta
-					property="og:descritpion"
+					property="og:description"
 					content="Vous trouverez une liste de projets que Feldrise a pu accompanger jusqu'a présent."
 				/>
 				<meta property="og:url" content="https://feldrise.com" />
@@ -90,6 +90,7 @@ const Projects: NextPage = () =>
 			</Head>
 			<Section className="my-20">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+					<h1 className='hidden'>Les projets accompagnés par Feldrise</h1>
 					{projects.map((project, index) => (
 						<Link key={project.name} href="/projects/[name]" as={`/projects/${project.name}`} passHref>
 							<Project

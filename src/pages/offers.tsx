@@ -35,7 +35,7 @@ const Offers: NextPage = () => {
 
 				<meta property="og:title" content="Feldrise - La solution CTO en Bretagne" />
 				<meta
-					property="og:descritpion"
+					property="og:description"
 					content="Feldrise prpose plusieurs offres pour vous accompagner. Du petit audit jusqu'à une
 							 intervention d'un mois, nous aurons forcément quelque chose à vous proposer."
 				/>
@@ -181,7 +181,7 @@ const Offers: NextPage = () => {
 			>
 				<h2>Offre 2 : Le petit audit</h2>
 				<p className="w-1/4 p-2 bg-secondary rounded-xl">
-					À partir de 190€ HT la journée
+					À partir de 234€ HT la journée
 				</p>
 				<div className='height-4'/>
 				<h3>Contenu</h3>
@@ -260,18 +260,21 @@ const Offers: NextPage = () => {
 					content="Nous formons les personnes avec qui vous travaillez déjà pour intégrer une équipe de développeurs performants"
 				/>
 				<Value
-					content="Si vous n'avez pas d'équipe, nous vous aidons dans le recrutement de vos futurs éléments clés (stagiaires,
-						apprentis, employés...) et bien sûr, nous les formons pour qu'ils soient rapidement opérationnels et efficaces"
+					content={'Si vous n’avez pas d\'équipe : nous vous aidons dans le recrutement de vos futurs' +
+					' éléments clés (stagiaires, apprentis, employés...)\n' +
+					' - On vous accompagne dans les recherches et pouvons même vous proposer des profils\n' +
+					' - On fait les entretiens avec vous pour que tout se déroule au mieux\n' +
+					' - Une fois recrutés, nous les formons pour qu\'ils soient rapidement opérationnels et efficaces'}
 				/>
 				<div className="height-16" />
 				<div className="grid grid-cols-1 lg:grid-cols-3">
 					<div className="w-full col-span-2 flex flex-col gap-4">
-						<h3>Pourquoi ?</h3>
+						{/* <h3>Pourquoi ?</h3>
 						<h4>Des résultats</h4>
 						<p>
 							Nous vous aidons à créer un plan d&apos;action claire pour la suite de votre entreprise,
 							et nous vous aidons même à organiser votre prévisionnel sur le budget futur.
-						</p>
+						</p> */}
 						<div className="w-full p-8 bg-secondary rounded-xl">
 							<div className='grid grid-cols-4'>
 								<h3 className='col-span-3'>Et le prix ?</h3>
