@@ -283,8 +283,8 @@ const Offers: NextPage = () => {
 							</div>
 							<div className="bg-white my-4 w-1/3 h-1" />
 							<p>
-								Nous vous proposons 30 jours (séparables par tranches de 2h pour plus de flexibilité) répartissables sur 1 an au prix de 3500€
-								{' '}HT
+								Nous vous proposons une offre sur mesure par rappors à vos besoins. Alors n&apos;hésitez pas à prendre
+								rendez-vous !
 							</p>
 						</div>
 					</div>
