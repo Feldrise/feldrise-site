@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-import { CONTACT_MAIL } from '../../../constants/app';
+import {CONTACT_MAIL} from '../../../constants/app';
 
 const Calendly = dynamic(() => import('../CalendlyButton'), {
 	ssr: false,

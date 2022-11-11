@@ -53,25 +53,19 @@ const NavBar = () => {
 					'bg-gradient-to-b from-black to-black/0 z-40'
 				)}
 			>
-				<Link href="/">
-					<a className="hidden 2xl:block">
-						<Image src="/images/logo-white.svg" width={300} height={75} alt="Website's logo"/>
-					</a>
+				<Link href="/" className="hidden 2xl:block">
+					<Image src="/images/logo-white.svg" width={300} height={75} alt="Website's logo"/>
 				</Link>
-				<Link href="/">
-					<a className="block 2xl:hidden">
-						<Image src="/images/logo-white-small.svg" width={75} height={75} alt="Website's logo"/>
-					</a>
+				<Link href="/" className="block 2xl:hidden">
+					<Image src="/images/logo-white-small.svg" width={75} height={75} alt="Website's logo"/>
 				</Link>
 				<div className="hidden xl:flex px-8 gap-8">
 					{routes.map((route, index) =>
-						<Link href={route.href} key={index}>
-							<a className={cx(
-								'px-7 py-2 flex justify-center items-center gap-2',
-								'bg-white rounded-lg text-black text-lg font-bold text-center hover:bg-primary hover:text-white',
-							)}>
-								{route.name}
-							</a>
+						<Link href={route.href} key={index} className={cx(
+							'px-7 py-2 flex justify-center items-center gap-2',
+							'bg-white rounded-lg text-black text-lg font-bold text-center hover:bg-primary hover:text-white',
+						)}>
+							{route.name}
 						</Link>
 					)}
 				</div>
@@ -112,18 +106,14 @@ const NavBar = () => {
 					<FontAwesomeIcon icon={faXmark} className="text-3xl"/>
 				</button>
 				{routes.map((route, index) =>
-					<Link href={route.href} key={index}>
-						<a
-							className={cx(
-
-								'relative !py-4 text-white text-center text-2xl hover:bg-primary',
-								'after:content-[\'\'] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[90%] after:h-1',
-								'after:bg-primary',
-							)}
-							onClick={() => setShowSlider(false)}
-						>
-							{route.name}
-						</a>
+					<Link href={route.href} key={index} className={cx(
+						'relative !py-4 text-white text-center text-2xl hover:bg-primary',
+						'after:content-[\'\'] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[90%] after:h-1',
+						'after:bg-primary',
+					)}
+					onClick={() => setShowSlider(false)}
+					>
+						{route.name}
 					</Link>
 				)}
 			</div>

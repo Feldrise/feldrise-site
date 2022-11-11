@@ -18,8 +18,8 @@ const Button = (props: IButtonProps) => {
 	);
 
 	return props.href ? (
-		<Link href={props.href} as={props.as}>
-			<a className={className}>{props.children}</a>
+		<Link className={className} href={props.href} as={props.as}>
+			{props.children}
 		</Link>
 	) : (
 		<button
