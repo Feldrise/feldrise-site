@@ -2,6 +2,7 @@ import {GetServerSidePropsResult, NextPage} from 'next';
 import Head from 'next/head';
 import BlogPreview from '../../components/molecules/Blog/BlogPreview';
 import SideBar from '../../components/molecules/Contact/SideBar';
+import Contact from '../../components/organisms/Contact';
 import Section from '../../components/organisms/Section';
 import {getAllPosts} from '../../helpers/blog-helper';
 import {TypeBlogDetails} from '../../types/TypeBlogDetails';
@@ -64,6 +65,9 @@ const BlogArticle: NextPage<BlogIndexProps> = (options: BlogIndexProps) => {
 					</div>
 				</div>
 			</Section>
+			<div className='lg:hidden'>
+				<Contact/>
+			</div>
 		</>
 	);
 };
