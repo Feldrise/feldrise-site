@@ -1,16 +1,16 @@
 import React from 'react';
 import '../styles/globals.css';
+import '../styles/prism-dracula.css';
 import type {AppProps} from 'next/app';
 import NavBar from '../components/organisms/NavBar';
 import NavBarContext from '../context/NavBarContext';
 import Footer from '../components/organisms/Footer';
-import Contact from '../components/organisms/Contact';
 import NotificationContext, {INotification, NotificationType} from '../context/NotificationContext';
 import Notifications from '../components/organisms/Notifications';
 
 /**
  * The application object
- * @param {{Component, pageProps}} param0 the params for the app
+ * @param {{Component: NextComponentType, pageProps}} param0 the params for the app
  * @return {AppProps} the actual HTML app
  */
 const MyApp = ({Component, pageProps}: AppProps) => {
@@ -36,7 +36,6 @@ const MyApp = ({Component, pageProps}: AppProps) => {
 			<Notifications/>
 			<NavBar/>
 			<Component {...pageProps} />
-			<Contact/>
 			<Footer/>
 		</NavBarContext.Provider>
 	</NotificationContext.Provider>;

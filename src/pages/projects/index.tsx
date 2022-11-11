@@ -7,6 +7,7 @@ import Project from '../../components/molecules/Project';
 import 'swiper/css';
 import cx from 'classnames';
 import Head from 'next/head';
+import Contact from '../../components/organisms/Contact';
 
 interface IProjectInfo {
 	name: string;
@@ -105,6 +106,7 @@ const Projects: NextPage = () =>
 					))}
 				</div>
 			</Section>
+			<Contact/>
 		</>
 	);
 

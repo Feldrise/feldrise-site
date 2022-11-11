@@ -13,7 +13,7 @@ interface IButtonProps {
 
 const Button = (props: IButtonProps) => {
 	const className = cx(
-		'w-fit px-8 py-2 bg-primary hover:bg-primary-dark duration-300 rounded-md text-2xl text-center',
+		'w-fit px-8 py-2 bg-primary hover:bg-primary-dark duration-300 rounded-md text-xl text-center',
 		props.className
 	);
 

@@ -11,6 +11,7 @@ import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper';
 import {projects} from './index';
+import Contact from '../../components/organisms/Contact';
 
 const Project: NextPage = () => {
 	const router = useRouter();
@@ -77,6 +78,7 @@ const Project: NextPage = () => {
 					</Swiper>
 				}
 			</Section>
+			<Contact/>
 		</>
 	);
 };

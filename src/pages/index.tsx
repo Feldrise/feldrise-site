@@ -16,6 +16,7 @@ import {Autoplay, Navigation} from 'swiper';
 import 'swiper/css/navigation';
 import Card from '../components/atoms/Offers/Card';
 import Head from 'next/head';
+import Contact from '../components/organisms/Contact';
 
 interface IReview {
 	author: string;
@@ -242,6 +243,7 @@ const Home: NextPage = () => {
 					</Section>
 				</div>
 			</div>
+			<Contact/>
 		</>
 	);
 };

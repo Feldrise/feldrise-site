@@ -27,6 +27,10 @@ const routes: IRoute[] = [
 		name: 'Offres',
 		href: '/offers',
 	},
+	{
+		name: 'Le Blog',
+		href: '/blog',
+	},
 ];
 
 const NavBar = () => {
@@ -63,8 +67,8 @@ const NavBar = () => {
 					{routes.map((route, index) =>
 						<Link href={route.href} key={index}>
 							<a className={cx(
-								'px-10 py-2 flex justify-center items-center gap-2',
-								'bg-white rounded-lg text-black text-2xl text-center hover:bg-primary hover:text-white',
+								'px-7 py-2 flex justify-center items-center gap-2',
+								'bg-white rounded-lg text-black text-lg font-bold text-center hover:bg-primary hover:text-white',
 							)}>
 								{route.name}
 							</a>
@@ -74,10 +78,16 @@ const NavBar = () => {
 				<div className="flex gap-8">
 					<Button
 						className="!bg-primary !text-white hover:!bg-primary-dark"
-						onClick={() => document.querySelector('#contact')?.scrollIntoView({
-							behavior: 'smooth',
-							block: 'center',
-						})}
+						onClick={() => {
+							if (document.querySelector('#contact')) {
+								document.querySelector('#contact')?.scrollIntoView({
+									behavior: 'smooth',
+									block: 'center',
+								});
+							} else {
+								router.push('/contact');
+							}
+						}}
 					>
 						Contact <FontAwesomeIcon icon={faEnvelope} className="text-3xl"/>
 					</Button>
