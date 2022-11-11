@@ -1,4 +1,5 @@
 import {GetServerSidePropsResult, NextPage} from 'next';
+import Head from 'next/head';
 import BlogPreview from '../../components/molecules/Blog/BlogPreview';
 import SideBar from '../../components/molecules/Contact/SideBar';
 import Section from '../../components/organisms/Section';
@@ -24,6 +25,21 @@ const BlogArticle: NextPage<BlogIndexProps> = (options: BlogIndexProps) => {
 	const {posts} = options;
 	return (
 		<>
+			<Head>
+				<title>Feldrise Blog</title>
+				<meta
+					name="description"
+					content="Bienvenue sur le blog de Feldrise."
+				/>
+
+				<meta property="og:title" content='Feldrise Blog' />
+				<meta
+					property="og:description"
+					content="Bienvenue sur le blog de Feldrise."
+				/>
+				<meta property="og:url" content='https://feldrise.com/blog/' />
+				<meta property="og:image" content="https://feldrise.com/images/logo-white-small.png" />
+			</Head>
 			<Section>
 				<div className='relative h-screen overflow-hidden md:flex'>
 					<div className='flex-1 h-screen overflow-y-auto lg:mr-[334px]'>
