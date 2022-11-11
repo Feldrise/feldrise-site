@@ -26,7 +26,7 @@ const Contact = () => {
 				<Calendly />
 
 				<div className='h-2' />
-				<a className='text-secondary' href={`mailto:${CONTACT_MAIL}`}>Ou nous envoyer un message</a>
+				<a className='text-secondary' href={`mailto:${CONTACT_MAIL}?subject=Demande de contact depuis le site`}>Ou nous envoyer un message</a>
 			</div>
 		</Section>
 	);
