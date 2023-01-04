@@ -1,7 +1,7 @@
 import React, {HTMLInputTypeAttribute} from 'react';
 import cx from 'classnames';
 import {UseFormRegister} from 'react-hook-form';
-import {IContactFormData} from '../../molecules/Contact/Form';
+import {IGrizouContestEntry} from '../../molecules/Forms/GrizouContestForm';
 
 interface IFieldProps {
 	label?: string;
@@ -11,7 +11,7 @@ interface IFieldProps {
 	placeholder?: string;
 	value?: string | number;
 	name: string;
-	register: UseFormRegister<IContactFormData>;
+	register: UseFormRegister<IGrizouContestEntry>;
 	required?: boolean;
 }
 

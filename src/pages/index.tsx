@@ -68,6 +68,8 @@ const Home: NextPage = () => {
 				/>
 				<meta property="og:url" content="https://feldrise.com" />
 				<meta property="og:image" content="https://feldrise.com/images/logo-white-small.png" />
+
+				<meta name="facebook-domain-verification" content="ylonayle0d7wqblo6448bmnog1cxz8" />
 			</Head>
 			<div className="flex flex-col">
 				<div className="relative h-screen bg-hero bg-right lg:bg-cover">

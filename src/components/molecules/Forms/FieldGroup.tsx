@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface IFieldGroupProps {
-    children?: React.ReactNode;
+	children?: React.ReactNode;
 }
 
 const FieldGroup = (props: IFieldGroupProps) => {
