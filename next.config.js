@@ -7,6 +7,13 @@ const nextConfig = {
 			'feldrise.com',
 		],
 	},
+	webpack: (config) => {
+		config.module.rules.push({
+			test: /\.html$/,
+			loader: 'html-loader',
+		});
+		return config;
+	},
 	async redirects() {
 		return [
 			{

@@ -1,6 +1,7 @@
 import type {NextApiRequest, NextApiResponse} from 'next';
 import nodemailer, {Transporter} from 'nodemailer';
 import SMTPTransport from 'nodemailer/lib/smtp-transport';
+import ConcoursGrizouMailTemplate from '../../../emails/concours-grizou.html';
 // import reCaptchaMiddleware from '../../middlewares/reCaptcha';
 
 /*
@@ -54,21 +55,16 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
 		const transporter: Transporter = nodemailer.createTransport(transport);
 
-		/* const sentMail: SMTPTransport.SentMessageInfo = */ await transporter.sendMail({
+		/* const sentMail: SMTPTransport.SentMessageInfo = */
+		await transporter.sendMail({
 			from: process.env.MAIL_USER,
-			to: process.env.MAIL_RECEIVER,
-			replyTo: `"${req.body.fullName}" <${req.body.email}>`,
-			subject: `Demande de contacte de ${req.body.fullName}`,
-			text: `Nom Prénom: ${req.body.fullName}\nSociété: ${req.body.society || 'N/A'}
-			\nNuméro de téléphone: ${req.body.phone || 'N/A'}\n\nMessage: ${req.body.message}`,
-			/*
-			html: loadTemplate('templates/mail/contact.html', {
-				email: req.body.email,
-				fullName: req.body.fullName,
-				phone: req.body.phone,
-				message: req.body.email,
-			}),
-			*/
+			to: req.body.email,
+			replyTo: `"${process.env.MAIL_NAME}" <${process.env.MAIL_USER}>`,
+			subject: `Participation au concours Grizou`,
+			text: `Bonjour ${req.body.name} !\n
+			Merci pour votre participation au concours ! Pour aller plus loin, nous avons besoins que vous repondiez à ce questionnaire : 
+			https://3g9wwgz3rgx.typeform.com/to/fXpEtCxz`,
+			html: ConcoursGrizouMailTemplate.replaceAll('{{fullname}}', req.body.name),
 		});
 
 		/* if (process.env.NODE_ENV !== 'production') {

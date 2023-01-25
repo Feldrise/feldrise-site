@@ -40,6 +40,14 @@ const GrizouContestForm = (props: IGrizouContestFormProps) => {
 			projectDescription: data.projectDescription,
 		}).then(() => {
 			addNotification('Votre participation a bien été enregistrée.', 'success', 5000);
+
+			// On envoie aussi un mail de confirmation
+			axios.post('/api/mail-grizou-contest', {
+				email: data.email,
+				name: data.lastName,
+				fullName: `${data.firstName} ${data.lastName}`,
+			});
+
 			onSuccess();
 			reset();
 		}).catch(() => {

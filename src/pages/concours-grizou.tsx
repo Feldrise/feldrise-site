@@ -7,7 +7,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import React, {useEffect} from 'react';
 import Button from '../components/atoms/Button';
-import GrizouContestForm from '../components/molecules/Forms/GrizouContestForm';
 import GrizouConsultant from '../components/molecules/GrizouContest/GrizouConsultant';
 import GrizouOffer from '../components/molecules/GrizouContest/GrizouOffer';
 import Section from '../components/organisms/Section';
@@ -56,7 +55,7 @@ const GrizouContest: NextPage = () => {
 							   2xl:h-full 2xl:pr-[5rem] 2xl:pl-[10rem] 2xl:block 2xl:absolute 2xl:left-0 2xl:w-1/2 2xl:overflow-y-auto'
 					ref={formRef}
 				>
-					<GrizouContestForm
+					{/* <GrizouContestForm
 						onSuccess={() => {
 							import('react-facebook-pixel')
 								.then((x) => x.default)
@@ -64,7 +63,12 @@ const GrizouContest: NextPage = () => {
 									ReactPixel.trackSingle('886720519156124', 'SubmitApplication');
 								});
 						}}
-					/>
+					/> */}
+					<div className='w-full py-4 px-4 mb-6 bg-amber-500 rounded-xl text-black font-bold text-center'>
+						<p>
+							C&apos;est terminé ! Merci a tous les participants ! 💖
+						</p>
+					</div>
 				</Section>
 				<div className='w-full grow  py-12 px-[2rem] md:px-[5rem]
 								2xl:h-full 2xl:w-1/2 2xl:pl-[5rem] 2xl:pr-[10rem] 2xl:block 2xl:absolute 2xl:right-0 2xl:overflow-y-auto' style={{
@@ -186,6 +190,13 @@ const GrizouContest: NextPage = () => {
 							</div>
 							<div className='h-4' />
 
+							<GrizouConsultant
+								author='Abdel'
+								site='https://twitter.com/abdelwebseller'
+								image='abdel.jpg'
+								content="1h sur l'e-commerce et l'acquisition ainsi que les business en franchise"
+							/>
+							<div className='w-1/3 bg-secondary h-[2px]' />
 							<GrizouConsultant
 								author='André ROUSSARD (Avocat)'
 								site='https://stellor.com'
