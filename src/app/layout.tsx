@@ -1,6 +1,6 @@
 // import './globals.css';
 import Footer from '@/components/footer';
-import Menu from './menu';
+import Menu from '../components/menu';
 import './output.css';
 
 /**
@@ -22,6 +22,7 @@ export default function RootLayout({
 			<head />
 			<body>
 				<Menu />
+				<div className='min-h-[90px]' />
 				{children}
 				<Footer />
 			</body>
