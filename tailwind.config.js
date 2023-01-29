@@ -13,6 +13,10 @@ module.exports = {
 			},
 			backgroundImage: {
 				'header': 'url("/images/header.webp")',
+				'me-art': 'url("/images/me-art.webp")',
+				'me': 'url("/images/me.webp")',
+				'offer1': 'url("/images/offer1.webp")',
+				'offer2': 'url("/images/offer2.webp")',
 			},
 			maxWidth: {
 				'desktop': '1440px',
