@@ -725,8 +725,12 @@ video {
   background-image: url("/images/header.webp");
 }
 
-.bg-me{
-  background-image: url("/images/me.webp");
+.bg-cto-illu1{
+  background-image: url("/images/cto_illustration1.webp");
+}
+
+.bg-cto-illu2{
+  background-image: url("/images/cto_illustration2.webp");
 }
 
 .bg-offer1{
@@ -747,6 +751,14 @@ video {
 
 .bg-center{
   background-position: center;
+}
+
+.bg-left{
+  background-position: left;
+}
+
+.bg-right{
+  background-position: right;
 }
 
 .p-4{

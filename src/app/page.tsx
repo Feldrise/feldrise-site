@@ -97,14 +97,14 @@ export default function Home(): JSX.Element {
 						<div className='grow max-w-desktop flex'>
 							<div className='w-full grow hidden md:flex flex-col items-center justify-center gap-4'>
 								<div
-									className='w-full h-full p-4 grow bg-me bg-cover bg-center flex flex-col items-center justify-end'
+									className='w-full h-full p-4 grow bg-cto-illu1 bg-cover bg-right rounded-md flex flex-col items-center justify-end'
 								>
-									<p className='bg-neutral py-4 px-8 rounded-md'>Victor - CTO chez Feldrise</p>
+									{/* <p className='bg-neutral py-4 px-8 rounded-md'>Victor - CTO chez Feldrise</p> */}
 								</div>
 								<div
-									className='w-full h-full p-4 grow bg-me bg-cover bg-center flex flex-col items-center justify-end'
+									className='w-full h-full p-4 grow bg-cto-illu2 bg-cover bg-right rounded-md flex flex-col items-center justify-end'
 								>
-									<p className='bg-neutral py-4 px-8 rounded-md'>Victor - CTO chez Feldrise</p>
+									{/* <p className='bg-neutral py-4 px-8 rounded-md'>Victor - CTO chez Feldrise</p> */}
 								</div>
 							</div>
 							<div className='grow flex flex-col gap-8 px-8 lg:px-20 py-8 lg:py-16'>
