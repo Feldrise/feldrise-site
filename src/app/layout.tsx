@@ -1,4 +1,5 @@
 // import './globals.css';
+import Footer from '@/components/footer';
 import Menu from './menu';
 import './output.css';
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 			<body>
 				<Menu />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

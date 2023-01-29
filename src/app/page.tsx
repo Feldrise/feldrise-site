@@ -2,9 +2,9 @@ import Button from '@/components/button';
 import CalendlyButton from '@/components/calendly-button';
 import Image from 'next/image';
 import OfferCard from './components/offer-card';
+import PortraitImage from './components/portrait_image';
 import ProjectCard from './components/project_card';
 import SectionTitle from './components/section_title';
-
 
 /**
  * The home page of the site
@@ -199,6 +199,35 @@ export default function Home(): JSX.Element {
 								<h2 className='grow text-5xl'>Trouver un CTO chez Feldrise</h2>
 								<CalendlyButton buttonStyle='secondary' />
 							</div>
+						</div>
+					</div>
+				</section>
+
+				<section className='w-full flex justify-center items-center bg-cats bg-cover'>
+					<div className='max-w-desktop flex flex-col items-center justify-center py-8 px-24 gap-16'>
+						<h2
+							className='text-5xl font-bold underline decoration-primary decoration-[10px] underline-offset-[-5px]'
+							style={{
+								textDecorationSkipInk: 'none',
+							}}
+						>
+							Ils en parlent mieux que nous
+						</h2>
+
+						<div className="h-full flex justify-center items-center gap-4">
+							<div className="p-12 col-span-2 rounded-2xl bg-white text-black">
+								<p>
+									<span className='text-3xl text-primary'>Yohann HUCHET</span>
+									&nbsp;-&nbsp;
+									Vet-Design
+								</p>
+								<div className='bg-primary my-2 h-1 w-1/3' />
+								<p className="mt-6">
+									Feldrise est très compétent, à l&apos;écoute et de bons conseils. Passionné ils aiment être challengé pour aboutir
+									au résultat demandé. N&apos;hesitez pas à travailler avec eux.
+								</p>
+							</div>
+							<PortraitImage image="/images/reviews/yohann.jpeg" className="hidden lg:block"/>
 						</div>
 					</div>
 				</section>
