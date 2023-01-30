@@ -15,6 +15,7 @@ module.exports = {
 				'cats': 'url("/cats-background.svg")',
 				'header': 'url("/images/header.webp")',
 				'header-projects': 'url("/images/header-projects.webp")',
+				'header-blog': 'url("/images/header-blog.webp")',
 				'me-art': 'url("/images/me-art.webp")',
 				'me': 'url("/images/me.webp")',
 				'cto-illu1': 'url("/images/cto_illustration1.webp")',
@@ -25,7 +26,32 @@ module.exports = {
 			maxWidth: {
 				'desktop': '1440px',
 			},
+			typography: () => ({
+				dark: {
+					css: {
+						'color': 'white',
+						'h1': {
+							'color': 'white',
+						},
+						'h2': {
+							'color': '#FF33DE',
+						},
+						'h3, h4': {
+							'color': 'white',
+						},
+						'a': {
+							'color': '#FF33DE',
+						},
+						'p , code , strong, li': {
+							'color': 'white',
+							'font-family': 'Lato, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+						},
+					},
+				},
+			}),
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 };

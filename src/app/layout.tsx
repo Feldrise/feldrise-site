@@ -1,11 +1,12 @@
 // import './globals.css';
 import Footer from '@/app/footer';
 import Menu from './menu';
+import './prism-dracula.css';
 import './output.css';
 
 /**
  * The global layout of pages
- * @param {React.ReactNode} param0 The children to put in the layout
+ * @param {React.ReactNode} children The children to put in the layout
  * @return {JSX.Element} The actual layout
  */
 export default function RootLayout({
@@ -22,7 +23,7 @@ export default function RootLayout({
 			<head />
 			<body>
 				<Menu />
-				<div className='min-h-[90px]' />
+				<div className='min-h-[128px]' />
 				{children}
 				<Footer />
 			</body>
