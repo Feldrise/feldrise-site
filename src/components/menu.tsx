@@ -20,7 +20,7 @@ const routes: IRoute[] = [
 	},
 	{
 		name: 'Projets',
-		href: '/projects',
+		href: '/projets',
 	},
 	{
 		name: 'Le Blog',

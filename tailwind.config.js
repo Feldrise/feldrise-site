@@ -14,6 +14,7 @@ module.exports = {
 			backgroundImage: {
 				'cats': 'url("/cats-background.svg")',
 				'header': 'url("/images/header.webp")',
+				'header-projects': 'url("/images/header-projects.webp")',
 				'me-art': 'url("/images/me-art.webp")',
 				'me': 'url("/images/me.webp")',
 				'cto-illu1': 'url("/images/cto_illustration1.webp")',

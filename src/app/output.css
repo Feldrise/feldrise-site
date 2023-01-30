@@ -519,16 +519,8 @@ video {
   position: fixed;
 }
 
-.absolute{
-  position: absolute;
-}
-
 .relative{
   position: relative;
-}
-
-.sticky{
-  position: sticky;
 }
 
 .top-0{
@@ -551,6 +543,10 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.m-8{
+  margin: 2rem;
+}
+
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -559,6 +555,21 @@ video {
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.my-24{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .mt-6{
@@ -601,16 +612,12 @@ video {
   height: 290px;
 }
 
-.h-\[90px\]{
-  height: 90px;
+.min-h-\[90px\]{
+  min-height: 90px;
 }
 
 .min-h-\[200px\]{
   min-height: 200px;
-}
-
-.min-h-\[90px\]{
-  min-height: 90px;
 }
 
 .w-full{
@@ -795,18 +802,8 @@ video {
   background-image: url("/cats-background.svg");
 }
 
-.bg-gradient-to-b{
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.from-black{
-  --tw-gradient-from: #000;
-  --tw-gradient-to: rgb(0 0 0 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-black\/0{
-  --tw-gradient-to: rgb(0 0 0 / 0);
+.bg-header-projects{
+  background-image: url("/images/header-projects.webp");
 }
 
 .bg-cover{
@@ -821,6 +818,10 @@ video {
   background-position: right;
 }
 
+.bg-bottom{
+  background-position: bottom;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -831,6 +832,10 @@ video {
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .py-12{
@@ -886,6 +891,11 @@ video {
 .\!py-4{
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
+}
+
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .text-center{
@@ -1070,6 +1080,11 @@ body {
   .md\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .md\:py-40{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 

@@ -79,7 +79,7 @@ export default function Home(): JSX.Element {
 										textColor='text-white' />
 								</div>
 								<div className='w-full flex flex-col items-center md:flex-row gap-4'>
-									<Button>
+									<Button href='/projets'>
 										Découvrir tous les projets
 									</Button>
 									<CalendlyButton buttonStyle='secondary' />
