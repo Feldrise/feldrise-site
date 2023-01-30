@@ -11,6 +11,8 @@ export default function Head(): JSX.Element {
 				content="Feldrise est une agence digitale Bretonne proposant un accompagnement complet dans la réalisation technique de votre projet."
 			/>
 
+			<meta content="width=device-width, initial-scale=1" name="viewport" />
+
 			<meta property="og:title" content="Feldrise - La solution CTO en Bretagne" />
 			<meta
 				property="og:description"

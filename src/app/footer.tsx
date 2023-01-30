@@ -9,8 +9,8 @@ import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
  */
 export default function Footer(): JSX.Element {
 	return (
-		<footer className="w-full max-w-desktop py-12 flex justify-between items-center">
-			<span className="text-xl">
+		<footer className="w-full max-w-desktop px-8 py-12 flex flex-col md:flex-row gap-4 justify-center md:justify-between items-center">
+			<span className="text-xl text-center md:text-left">
 				Copyright © 2022 <span className='text-primary'>Feldrise</span>
 				&nbsp;x&nbsp;
 				<a className='text-secondary' href="https://suiramdev.com/" rel="noreferrer" target="_blank">suiramdev</a></span>
