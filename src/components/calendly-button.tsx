@@ -30,7 +30,7 @@ export default function CalendlyButton(props: ICalendlyButtonProps): JSX.Element
 			<PopupButton
 				url="https://calendly.com/feldrise-victor/45min?primary_color=aa33ff"
 				rootElement={document.body}
-				text="Prendez rendez-vous"
+				text="Prendre rendez-vous"
 			/>
 		</div>
 	);

@@ -1274,6 +1274,10 @@ video {
   overflow-y: auto;
 }
 
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
 .break-normal{
   overflow-wrap: normal;
   word-break: normal;

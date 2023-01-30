@@ -36,7 +36,7 @@ export default function Home(): JSX.Element {
 							<div className='h-12' />
 							<div className='w-full flex flex-col items-center md:flex-row gap-4'>
 								<CalendlyButton />
-								<Button buttonStyle='secondary'>
+								<Button href='#whyacto' buttonStyle='secondary'>
 									En savoir plus
 								</Button>
 							</div>
@@ -90,7 +90,7 @@ export default function Home(): JSX.Element {
 				</section>
 
 				{/* Ce que nous proposons */}
-				<section className='w-full'>
+				<section id="whyacto" className='w-full'>
 					<div className='h-4' />
 					<SectionTitle title='Pourquoi un CTO externalisé ?' alignment='end' />
 					<div className='w-full flex justify-center items-center my-4'>
@@ -121,7 +121,7 @@ export default function Home(): JSX.Element {
 									<Button href='https://github.com/Feldrise/Feldrise/blob/master/manifeste-cto.md'>
 										Lire le manifeste du CTO
 									</Button>
-									<Button buttonStyle='secondary'>
+									<Button href='/projets' buttonStyle='secondary'>
 										Les projets accompagnés
 									</Button>
 								</div>
