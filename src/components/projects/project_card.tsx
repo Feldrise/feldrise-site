@@ -22,7 +22,7 @@ export default function ProjectCard(props: IProjectCardProps): JSX.Element {
 	);
 
 	return (
-		<div className="grow flex flex-col items-center gap-4 p-4 rounded-md bg-white">
+		<div className="grow flex flex-col max-w-[500px] items-center gap-4 p-4 rounded-md bg-white">
 			<Image
 				src={props.image}
 				alt={props.projectTitle}

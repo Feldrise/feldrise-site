@@ -17,7 +17,7 @@ const BlogPreview = (options: BlogPreviewProps) => {
 	return (
 		<Link href={`/blog/${slug}`} passHref>
 			<div className="
-				flex flex-col pb-10 w-96 text-white overflow-hidden shadow-lg gap-2
+				flex flex-col pb-10 max-w-[400px] text-white overflow-hidden shadow-lg gap-2
 				border border-[1px] border-secondary
 				rounded-2xl hover:cursor-pointer  transition ease-in-out duration-200 hover:scale-100
 				">

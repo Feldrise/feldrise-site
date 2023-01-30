@@ -22,13 +22,21 @@ export default function Projets(): JSX.Element {
 				</section>
 
 				<section className="w-full flex items-center justify-center">
-					<div className='w-full grow max-w-desktop flex flex-col md:flex-row gap-4 items-center justify-center mx-8 my-24'>
+					<div className='w-full grow max-w-desktop flex flex-wrap gap-4 items-center justify-center mx-8 my-24'>
 						{/* Néo Voice */}
 						<ProjectCard
 							image='/images/projects/neovoice.webp'
 							projectTitle='Néo Voice'
 							site='https://neovoice.fr'
 							color='bg-[#E21D54]'
+							textColor='text-white' />
+
+						{/* My Demenageur */}
+						<ProjectCard
+							image='/images/projects/mydemenageur.webp'
+							projectTitle='My Demenageur'
+							site='https://mydemenageur.com'
+							color='bg-[#8142ff]'
 							textColor='text-white' />
 
 						{/* My Pool Process */}

@@ -62,20 +62,20 @@ export default function Home(): JSX.Element {
 										color='bg-[#E21D54]'
 										textColor='text-white' />
 
+									{/* My Demenageur */}
+									<ProjectCard
+										image='/images/projects/mydemenageur.webp'
+										projectTitle='My Demenageur'
+										site='https://mydemenageur.com'
+										color='bg-[#8142ff]'
+										textColor='text-white' />
+
 									{/* My Pool Process */}
 									<ProjectCard
 										image='/images/projects/mypoolprocess.webp'
 										projectTitle='My Pool Process'
 										site='https://mypoolprocess.fr'
 										color='bg-[#0054AC]'
-										textColor='text-white' />
-
-									{/* Logi Soap */}
-									<ProjectCard
-										image='/images/projects/logisoap.webp'
-										projectTitle='Logi Soap'
-										site='https://logisoap.com'
-										color='bg-[#03035A]'
 										textColor='text-white' />
 								</div>
 								<div className='w-full flex flex-col items-center md:flex-row gap-4'>

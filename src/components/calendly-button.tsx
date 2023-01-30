@@ -1,7 +1,8 @@
 'use client';
 
-import {PopupButton} from 'react-calendly';
+// import {PopupButton} from 'react-calendly';
 import cx from 'classnames';
+import Link from 'next/link';
 
 interface ICalendlyButtonProps {
 	className?: string;
@@ -25,13 +26,21 @@ export default function CalendlyButton(props: ICalendlyButtonProps): JSX.Element
 		className += ' bg-primary hover:bg-primary-dark';
 	}
 
+	// if (document != undefined) {
+	// 	return (
+	// 		<div className={className}>
+	// 			<PopupButton
+	// 				url="https://calendly.com/feldrise-victor/45min?primary_color=aa33ff"
+	// 				rootElement={document.body}
+	// 				text="Prendre rendez-vous"
+	// 			/>
+	// 		</div>
+	// 	);
+	// }
+
 	return (
-		<div className={className}>
-			<PopupButton
-				url="https://calendly.com/feldrise-victor/45min?primary_color=aa33ff"
-				rootElement={document.body}
-				text="Prendre rendez-vous"
-			/>
-		</div>
+		<Link className={className} href='https://calendly.com/feldrise-victor/45min?primary_color=aa33ff' target="_blank">
+			Prendre rendez-vous
+		</Link>
 	);
 }
