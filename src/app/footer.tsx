@@ -1,5 +1,7 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLinkedinIn, faFacebookF} from '@fortawesome/free-brands-svg-icons';
+import {faLinkedinIn, faFacebookF, faTwitter} from '@fortawesome/free-brands-svg-icons';
+import {CONTACT_MAIL} from '@/constants/app';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 /**
  * The footer compononent
@@ -18,6 +20,12 @@ export default function Footer(): JSX.Element {
 				</a>
 				<a href="https://fr-fr.facebook.com/feldrisepage" target="_blank" rel="noreferrer">
 					<FontAwesomeIcon icon={faFacebookF} className="text-3xl"/>
+				</a>
+				<a href="https://twitter.com/feldrise" target="_blank" rel="noreferrer">
+					<FontAwesomeIcon icon={faTwitter} className="text-3xl"/>
+				</a>
+				<a href={`mailto:${CONTACT_MAIL}?subject=Demande de contact depuis le site`} target="_blank" rel="noreferrer">
+					<FontAwesomeIcon icon={faEnvelope} className="text-3xl"/>
 				</a>
 			</div>
 		</footer>

@@ -13,8 +13,8 @@ export default function BlogLayout({
 	return (
 		<div className='w-full flex items-center justify-center'>
 			<main className='w-full grow max-w-desktop relative'>
-				<div className='relative h-[calc(100vh-(256px))] overflow-hidden md:flex'>
-					<div className='flex-1 h-[calc(100vh-(256px))] pb-[128px] overflow-y-auto lg:mr-[334px]'>
+				<div className='relative h-[calc(100vh-(258px))] overflow-hidden md:flex'>
+					<div className='flex-1 h-[calc(100vh-(258px))] pb-[128px] overflow-y-auto lg:mr-[334px]'>
 						{children}
 					</div>
 				</div>
