@@ -1,6 +1,6 @@
 // import './globals.css';
-import Footer from '@/components/footer';
-import Menu from '../components/menu';
+import Footer from '@/app/footer';
+import Menu from './menu';
 import './output.css';
 
 /**

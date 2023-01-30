@@ -5,7 +5,7 @@ import cx from 'classnames';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars, faXmark} from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import CalendlyButton from './calendly-button';
+import CalendlyButton from '../components/calendly-button';
 import Image from 'next/image';
 
 interface IRoute {

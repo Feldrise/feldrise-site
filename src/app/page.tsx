@@ -1,10 +1,10 @@
 import Button from '@/components/button';
 import CalendlyButton from '@/components/calendly-button';
 import Image from 'next/image';
-import OfferCard from './components/offer-card';
-import PortraitImage from './components/portrait_image';
-import ProjectCard from './components/project_card';
-import SectionTitle from './components/section_title';
+import OfferCard from '../components/home/offer-card';
+import PortraitImage from '../components/home/portrait_image';
+import ProjectCard from '../components/projects/project_card';
+import SectionTitle from '../components/section_title';
 
 /**
  * The home page of the site
