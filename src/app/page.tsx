@@ -217,17 +217,19 @@ export default function Home(): JSX.Element {
 						<div className="h-full flex justify-center items-center gap-4">
 							<div className="p-12 col-span-2 rounded-2xl bg-white text-black">
 								<p>
-									<span className='text-3xl text-primary'>Yohann HUCHET</span>
+									<span className='text-3xl text-primary'>Emilie NOUVEAU</span>
 									&nbsp;-&nbsp;
-									Vet-Design
+									Néovoice
 								</p>
 								<div className='bg-primary my-2 h-1 w-1/3' />
 								<p className="mt-6">
-									Feldrise est très compétent, à l&apos;écoute et de bons conseils. Passionné ils aiment être challengé pour aboutir
-									au résultat demandé. N&apos;hesitez pas à travailler avec eux.
+									J&apos;ai contacté Feldrise pour m&apos;aider à accompagner mes deux salariés dans le domaine
+									du développement. En tant qu&apos;entrepreneuse j&apos;ai trouvé auprès de Victor un véritable
+									soutien. Sérieux, disponible et toujours dans une très bonne ambiance, il a su être à l&apos;écoute
+									de mon projet et me proposer un service sur mesure de très grande qualité.
 								</p>
 							</div>
-							<PortraitImage image="/images/reviews/yohann.jpeg" className="hidden lg:block"/>
+							<PortraitImage image="/images/reviews/emilie.jpeg" className="hidden lg:block"/>
 						</div>
 					</div>
 				</section>
