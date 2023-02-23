@@ -4,7 +4,7 @@ description: "Voici le premier article du blog ! Nous parlons des objectifs de c
 banner: "/images/blog/premier-post.webp"
 backgroundClass: 'bg-[url("/images/blog/premier-post.webp")]'
 tags: ["Entreprise"]
-date: 09 Novembre 2022
+date: 09 November 2022
 ---
 
 ## Bienvenue sur le premier article du blog de Feldrise

@@ -20,7 +20,10 @@ export default function BlogArticle({
 		return (
 			<article className="max-w-none flex flex-col break-normal prose prose-dark md:prose-xl-dark">
 				<section
-					className={cx('w-full py-12 md:py-24 px-8 flex justify-center items-center flex-col bg-cover bg-center', postDetails.data.backgroundClass)}
+					className={cx('w-full py-12 md:py-24 px-8 flex justify-center items-center flex-col bg-cover bg-center')}
+					style={{
+						backgroundImage: `url(${postDetails.data.banner})`,
+					}}
 				>
 					<div className='p-12 bg-neutral rounded-md flex justify-center items-center'>
 						<h1

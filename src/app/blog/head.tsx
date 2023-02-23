@@ -11,6 +11,8 @@ export default function Head(): JSX.Element {
 				content="Bienvenue sur le blog de Feldrise."
 			/>
 
+			<meta content="width=device-width, initial-scale=1" name="viewport" />
+
 			<meta property="og:title" content='Feldrise Blog' />
 			<meta
 				property="og:description"
