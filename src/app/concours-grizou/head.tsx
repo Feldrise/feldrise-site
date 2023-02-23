@@ -5,18 +5,18 @@
 export default function Head(): JSX.Element {
 	return (
 		<>
-			<title>Feldrise - Les projets accompangés</title>
+			<title>Feldrise - Le concours Grizou</title>
 			<meta
 				name="description"
-				content="Vous trouverez une liste de projets que Feldrise a pu accompanger jusqu'a présent."
+				content="Feldrise s'associe à Vieux Grizou pour un concours d'une valeur de 10k euros pour vous aider à lancer ou améliorer votre business !"
 			/>
 
 			<meta content="width=device-width, initial-scale=1" name="viewport" />
 
-			<meta property="og:title" content="Feldrise - La solution CTO en Bretagne" />
+			<meta property="og:title" content="Feldrise - Le concours Grizou" />
 			<meta
 				property="og:description"
-				content="Vous trouverez une liste de projets que Feldrise a pu accompanger jusqu'a présent."
+				content="Feldrise s'associe à Vieux Grizou pour un concours d'une valeur de 10k euros pour vous aider à lancer ou améliorer votre business !"
 			/>
 			<meta property="og:url" content="https://feldrise.com" />
 			<meta property="og:image" content="https://feldrise.com/logo-feldrise/icon-white-logo.png" />
