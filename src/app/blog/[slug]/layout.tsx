@@ -1,4 +1,4 @@
-import SideBar from './sidebar';
+import SideBar from '../sidebar';
 
 /**
  * The layout for the blog
