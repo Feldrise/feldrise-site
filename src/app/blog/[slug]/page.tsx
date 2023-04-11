@@ -20,12 +20,12 @@ export default function BlogArticle({
 		return (
 			<article className="max-w-none flex flex-col break-normal prose prose-dark md:prose-xl-dark">
 				<section
-					className={cx('w-full py-12 md:py-24 px-8 flex justify-center items-center flex-col bg-cover bg-center')}
+					className={cx('w-full py-12 md:py-24 px-8 lg:pr-[400px] flex justify-center items-center flex-col bg-cover bg-center bg-fixed')}
 					style={{
 						backgroundImage: `url(${postDetails.data.banner})`,
 					}}
 				>
-					<div className='p-12 bg-neutral rounded-md flex justify-center items-center'>
+					<div className='p-12 bg-[rgba(0,0,0,0.30)] shadow-lg backdrop-blur-lg rounded-md flex justify-center items-center max-w-7xl'>
 						<h1
 							className='text-4xl font-bold underline decoration-primary decoration-[10px] underline-offset-[-5px] m-0'
 							style={{
@@ -36,28 +36,36 @@ export default function BlogArticle({
 						</h1>
 					</div>
 				</section>
-				<p className='my-4 p-4 text-lg text-white bg-primary'>
-					<Link className='text-white' href="/blog">Accueil</Link> &gt; {postDetails.data.title}
+				<p className='w-full my-4 p-4 px-12 lg:pr-[400px] text-lg text-white bg-primary'>
+					<div className='max-w-7xl'>
+						<Link className='text-white' href="/blog">Accueil</Link> &gt; {postDetails.data.title}
+					</div>
 				</p>
-				<Markdown
-					options={{
-						wrapper: 'article',
-						forceBlock: false,
-						overrides: {
-							pre: {
-								component: CodeBlock,
-							},
-							a: {
-								props: {
-									target: '_blank',
-									rel: 'noreferrer',
-								},
-							},
-						},
-					}}
+				<section
+					className={cx('w-full px-12 lg:pr-[400px] flex justify-center items-center flex-col bg-cover bg-center')}
 				>
-					{postDetails.content}
-				</Markdown>
+					<div className='max-w-7xl'>
+						<Markdown
+							options={{
+								wrapper: 'article',
+								forceBlock: false,
+								overrides: {
+									pre: {
+										component: CodeBlock,
+									},
+									a: {
+										props: {
+											target: '_blank',
+											rel: 'noreferrer',
+										},
+									},
+								},
+							}}
+						>
+							{postDetails.content}
+						</Markdown>
+					</div>
+				</section>
 			</article>
 		);
 	} catch {

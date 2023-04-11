@@ -15,9 +15,11 @@ export default function Home(): JSX.Element {
 		<div className='w-full'>
 			<main className='flex justify-center items-center flex-col'>
 				{/* Le header */}
-				<section className='w-full py-12 md:py-32 flex justify-center items-center flex-col bg-header bg-cover bg-center gap-16'>
-					<div className='grow max-w-desktop px-8'>
-						<div className='py-[36px] px-10 bg-neutral rounded-md lg:w-1/2 flex flex-col items-start'>
+				<section className='w-full py-12 md:py-24 flex justify-center items-center flex-col bg-header bg-cover bg-center bg-fixed gap-16 animate-zoom'>
+					<div className='grow max-w-desktop'>
+						<div
+							className='py-[36px] px-10 bg-[rgba(0,0,0,0.30)] shadow-lg backdrop-blur-lg rounded-md lg:w-1/2 flex flex-col items-start'
+						>
 							<Image
 								src={'/logo-feldrise/white-logo.svg'}
 								alt='Logo de Feldrise'
@@ -42,48 +44,49 @@ export default function Home(): JSX.Element {
 							</div>
 						</div>
 					</div>
-					<div className='w-full bg-neutral flex flex-col justify-center items-center py-12'>
-						<div className='grow w-full max-w-desktop px-8'>
-							<div className='flex flex-col items-start justify-start gap-8'>
-								<h2
-									className='text-4xl font-bold underline decoration-primary decoration-[10px] underline-offset-[-5px]'
-									style={{
-										textDecorationSkipInk: 'none',
-									}}
-								>
-									Les projets accompagnés par Feldrise
-								</h2>
-								<div className='w-full flex flex-col md:flex-row gap-4 items-center justify-center'>
-									{/* Néo Voice */}
-									<ProjectCard
-										image='/images/projects/neovoice.webp'
-										projectTitle='Néo Voice'
-										site='https://neovoice.fr'
-										color='bg-[#E21D54]'
-										textColor='text-white' />
+					<div className='
+						w-full max-w-desktop
+						bg-[rgba(0,0,0,0.30)] shadow-lg backdrop-blur-lg px-10 flex flex-col justify-center items-center py-12 rounded-md
+					'>
+						<div className='flex flex-col items-start justify-start gap-8'>
+							<h2
+								className='text-4xl font-bold underline decoration-primary decoration-[10px] underline-offset-[-5px]'
+								style={{
+									textDecorationSkipInk: 'none',
+								}}
+							>
+								Les projets accompagnés par Feldrise
+							</h2>
+							<div className='w-full flex flex-col md:flex-row gap-4 items-center justify-center'>
+								{/* Néo Voice */}
+								<ProjectCard
+									image='/images/projects/neovoice.webp'
+									projectTitle='Néo Voice'
+									site='https://neovoice.fr'
+									color='bg-[#E21D54]'
+									textColor='text-white' />
 
-									{/* My Demenageur */}
-									<ProjectCard
-										image='/images/projects/mydemenageur.webp'
-										projectTitle='My Demenageur'
-										site='https://mydemenageur.com'
-										color='bg-[#8142ff]'
-										textColor='text-white' />
+								{/* My Demenageur */}
+								<ProjectCard
+									image='/images/projects/mydemenageur.webp'
+									projectTitle='My Demenageur'
+									site='https://mydemenageur.com'
+									color='bg-[#8142ff]'
+									textColor='text-white' />
 
-									{/* My Pool Process */}
-									<ProjectCard
-										image='/images/projects/mypoolprocess.webp'
-										projectTitle='My Pool Process'
-										site='https://mypoolprocess.fr'
-										color='bg-[#0054AC]'
-										textColor='text-white' />
-								</div>
-								<div className='w-full flex flex-col items-center md:flex-row gap-4'>
-									<Button href='/projets'>
-										Découvrir tous les projets
-									</Button>
-									<CalendlyButton buttonStyle='secondary' />
-								</div>
+								{/* My Pool Process */}
+								<ProjectCard
+									image='/images/projects/mypoolprocess.webp'
+									projectTitle='My Pool Process'
+									site='https://mypoolprocess.fr'
+									color='bg-[#0054AC]'
+									textColor='text-white' />
+							</div>
+							<div className='w-full flex flex-col items-center md:flex-row gap-4'>
+								<Button href='/projets'>
+									Découvrir tous les projets
+								</Button>
+								{/* <CalendlyButton buttonStyle='secondary' /> */}
 							</div>
 						</div>
 					</div>
@@ -92,17 +95,17 @@ export default function Home(): JSX.Element {
 				{/* Ce que nous proposons */}
 				<section id="whyacto" className='w-full'>
 					<div className='h-4' />
-					<SectionTitle title='Pourquoi un CTO externalisé ?' alignment='end' />
+					<SectionTitle title='Pourquoi un CTO à temps partagé ?' alignment='end' />
 					<div className='w-full flex justify-center items-center my-4'>
 						<div className='grow max-w-desktop flex'>
 							<div className='w-full grow hidden md:flex flex-col items-center justify-center gap-4'>
 								<div
-									className='w-full h-full p-4 grow bg-cto-illu1 bg-cover bg-right rounded-md flex flex-col items-center justify-end'
+									className='w-full h-full p-4 grow bg-cto-illu1 bg-full bg-fixed rounded-md flex flex-col items-center justify-end'
 								>
 									{/* <p className='bg-neutral py-4 px-8 rounded-md'>Victor - CTO chez Feldrise</p> */}
 								</div>
 								<div
-									className='w-full h-full p-4 grow bg-cto-illu2 bg-cover bg-right rounded-md flex flex-col items-center justify-end'
+									className='w-full h-full p-4 grow bg-cto-illu2 bg-full bg-fixed rounded-md flex flex-col items-center justify-end'
 								>
 									{/* <p className='bg-neutral py-4 px-8 rounded-md'>Victor - CTO chez Feldrise</p> */}
 								</div>
@@ -203,7 +206,7 @@ export default function Home(): JSX.Element {
 					</div>
 				</section>
 
-				<section className='w-full flex justify-center items-center bg-cats bg-cover'>
+				<section className='w-full flex justify-center items-center bg-cats bg-cover bg-fixed'>
 					<div className='max-w-desktop flex flex-col items-center justify-center py-8 px-24 gap-16'>
 						<h2
 							className='text-5xl font-bold underline decoration-primary decoration-[10px] underline-offset-[-5px]'
@@ -215,7 +218,7 @@ export default function Home(): JSX.Element {
 						</h2>
 
 						<div className="h-full flex justify-center items-center gap-4">
-							<div className="p-12 col-span-2 rounded-2xl bg-white text-black">
+							<div className="p-12 col-span-2 rounded-2xl  bg-[rgba(0,0,0,0.45)] shadow-lg backdrop-blur ">
 								<p>
 									<span className='text-3xl text-primary'>Emilie NOUVEAU</span>
 									&nbsp;-&nbsp;

@@ -26,6 +26,9 @@ module.exports = {
 			maxWidth: {
 				'desktop': '1440px',
 			},
+			backgroundSize: {
+				'full': 'auto 100%',
+			},
 			typography: () => ({
 				dark: {
 					css: {

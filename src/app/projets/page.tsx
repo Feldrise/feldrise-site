@@ -8,8 +8,13 @@ export default function Projets(): JSX.Element {
 	return (
 		<div className='w-full'>
 			<main className='flex justify-center items-center flex-col'>
-				<section className='w-full py-12 md:py-40 flex justify-center items-center flex-col bg-header-projects bg-cover bg-center'>
-					<div className='w-full max-w-desktop px-8 py-16 bg-neutral rounded-md flex justify-center items-center'>
+				<section className='w-full py-12 md:py-40 flex justify-center items-center flex-col bg-header-projects bg-fixed bg-cover bg-center'>
+					<div className='
+						w-full max-w-desktop
+						px-8 py-16
+						bg-[rgba(0,0,0,0.30)] shadow-lg backdrop-blur-lg rounded-md
+						flex justify-center items-center
+					'>
 						<h1
 							className='text-5xl font-bold underline decoration-primary decoration-[10px] underline-offset-[-5px]'
 							style={{
